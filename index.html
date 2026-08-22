@@ -1,19 +1,68 @@
 <!DOCTYPE html>
-<html lang="ar" dir="rtl" class="scroll-smooth">
+<html lang="ar" dir="rtl">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>مصر الخالدة | مهد الحضارة وجمال الشرق - حكيم الفراعنة</title>
-<meta name="description" content="منصة مصر الخالدة لاكتشاف الآثار المصرية، رحلة عبر العصور وتفاعل مع مرشد الفراعنة الذكي">
-<meta name="keywords" content="مصر الخالدة, حكيم الفراعنة, آثار مصر, السياحة في مصر">
-<meta name="robots" content="index, follow">
-<meta name="google-site-verification" content="GkYh-X7AvxiT_L7fjIZN4UOR1SF6QhBelknSKzXeSGA" />
+    <meta name="theme-color" content="#090806">
+
+    <title>مصر الخالدة | مهد الحضارة وجمال الشرق</title>
+
+    <meta name="description"
+          content="مصر الخالدة - اكتشف الحضارة المصرية القديمة، الأهرامات، الأقصر، أسوان، البحر الأحمر، سيناء والوجهات السياحية المصرية عبر تجربة رقمية تفاعلية.">
     
-    <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="keywords"
+          content="مصر الخالدة, مصر, السياحة في مصر, آثار مصر, الأهرامات, الأقصر, أسوان, القاهرة, خان الخليلي, دهب, سيوة, الحضارة المصرية, الفراعنة">
+
+    <meta name="author" content="مصر الخالدة - Egypt Eternal">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="googlebot" content="index, follow, max-image-preview:large">
+
+    <!-- غيّر هذا إلى رابط موقعك الحقيقي -->
+    <link rel="canonical" href="https://YOUR-DOMAIN.com/">
+
+    <!-- Google Search Console -->
+    <!-- استبدل القيمة بقيمة التحقق الخاصة بموقعك -->
+    <meta name="google-site-verification" content="GkYh-X7AvxiT_L7fjIZN4UOR1SF6QhBelknSKzXeSGA">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="ar_EG">
+    <meta property="og:site_name" content="مصر الخالدة">
+    <meta property="og:title" content="مصر الخالدة | مهد الحضارة وجمال الشرق">
+    <meta property="og:description"
+          content="اكتشف مصر وحضارتها وآثارها ووجهاتها السياحية عبر تجربة رقمية تفاعلية.">
+    <meta property="og:url" content="https://YOUR-DOMAIN.com/">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=85&w=1600">
+    <meta property="og:image:alt" content="أهرامات الجيزة - مصر الخالدة">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="مصر الخالدة | Egypt Eternal">
+    <meta name="twitter:description" content="اكتشف الحضارة المصرية والوجهات السياحية في مصر.">
+    <meta name="twitter:image" content="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=85&w=1600">
+
+    <!-- Favicon -->
+    <link rel="icon"
+          href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E𓂀%3C/text%3E%3C/svg%3E">
+
+    <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700;900&family=Cinzel:wght@500;700;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Cinzel:wght@500;600;700;800;900&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Tailwind -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Leaflet -->
+    <link rel="stylesheet"
+          href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
 
     <script>
         tailwind.config = {
@@ -21,16 +70,20 @@
                 extend: {
                     colors: {
                         gold: {
-                            100: '#FFF8E7',
-                            300: '#FCE082',
-                            400: '#F3C044',
-                            500: '#D4AF37',
-                            600: '#AA820A',
-                            800: '#5C4402',
+                            50: '#fffbea',
+                            100: '#fff4c7',
+                            200: '#ffe98a',
+                            300: '#fbd76b',
+                            400: '#f3c044',
+                            500: '#d4af37',
+                            600: '#aa820a',
+                            700: '#80620a',
+                            800: '#5c4402',
+                            900: '#382900'
                         },
-                        papyrus: '#f4ebd0',
                         pharaoh: '#0b1d3a',
-                        nile: '#0f3854'
+                        nile: '#0f3854',
+                        papyrus: '#f4ebd0'
                     },
                     fontFamily: {
                         cairo: ['Cairo', 'sans-serif'],
@@ -41,822 +94,2494 @@
         }
     </script>
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "مصر الخالدة",
+        "alternateName": "Egypt Eternal",
+        "url": "https://YOUR-DOMAIN.com/",
+        "description": "منصة رقمية لاكتشاف الحضارة المصرية والوجهات السياحية في مصر.",
+        "inLanguage": "ar-EG",
+        "potentialAction": {
+            "@type": "SearchAction",
+            "target": "https://YOUR-DOMAIN.com/?q={search_term_string}",
+            "query-input": "required name=search_term_string"
+        }
+    }
+    </script>
+
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "TouristDestination",
+        "name": "مصر",
+        "description": "جمهورية مصر العربية، أرض الحضارة المصرية القديمة والوجهات السياحية المتنوعة.",
+        "touristType": [
+            "Culture",
+            "History",
+            "Adventure",
+            "Beach"
+        ]
+    }
+    </script>
+
     <style>
+        :root {
+            --gold: #d4af37;
+            --gold-light: #ffe5a3;
+            --bg: #090806;
+            --panel: #12100d;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
         body {
+            margin: 0;
             font-family: 'Cairo', sans-serif;
-            background-color: #0c0a09;
+            background:
+                radial-gradient(circle at 20% 10%, rgba(212,175,55,.07), transparent 30%),
+                radial-gradient(circle at 80% 40%, rgba(15,56,84,.08), transparent 30%),
+                #090806;
             color: #f5f5f4;
             overflow-x: hidden;
         }
-        
-        .gold-gradient-text {
-            background: linear-gradient(135deg, #FFE5A3 0%, #D4AF37 50%, #997A15 100%);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
+
+        body::before {
+            content: "";
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            opacity: .18;
+            z-index: -1;
+            background-image:
+                radial-gradient(rgba(212,175,55,.3) 1px, transparent 1px);
+            background-size: 35px 35px;
         }
 
-        .gold-border-glow {
-            box-shadow: 0 0 15px rgba(212, 175, 55, 0.25);
-            border: 1px solid rgba(212, 175, 55, 0.4);
+        ::selection {
+            background: var(--gold);
+            color: #000;
         }
 
-        .gold-border-glow:hover {
-            box-shadow: 0 0 25px rgba(212, 175, 55, 0.5);
-            border-color: rgba(212, 175, 55, 0.8);
-        }
-
-        /* Custom Scrollbar */
         ::-webkit-scrollbar {
             width: 8px;
         }
+
         ::-webkit-scrollbar-track {
-            background: #0c0a09;
-        }
-        ::-webkit-scrollbar-thumb {
-            background: #332305;
-            border-radius: 4px;
-            border: 1px solid #D4AF37;
-        }
-        ::-webkit-scrollbar-thumb:hover {
-            background: #D4AF37;
+            background: #090806;
         }
 
-        .hieroglyph-bg {
-            background-image: radial-gradient(rgba(212, 175, 55, 0.08) 1px, transparent 0);
-            background-size: 24px 24px;
+        ::-webkit-scrollbar-thumb {
+            background: #5b4509;
+            border-radius: 20px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--gold);
+        }
+
+        .gold-text {
+            background: linear-gradient(
+                135deg,
+                #fff1b8,
+                #d4af37,
+                #8d6c0c
+            );
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+
+        .gold-border {
+            border: 1px solid rgba(212,175,55,.32);
+            box-shadow:
+                0 0 20px rgba(212,175,55,.08),
+                inset 0 0 30px rgba(212,175,55,.025);
+        }
+
+        .gold-border:hover {
+            border-color: rgba(212,175,55,.75);
+            box-shadow:
+                0 0 35px rgba(212,175,55,.16),
+                inset 0 0 30px rgba(212,175,55,.04);
+        }
+
+        .glass {
+            background: rgba(15,13,10,.72);
+            backdrop-filter: blur(18px);
+            -webkit-backdrop-filter: blur(18px);
+        }
+
+        .hero-glow {
+            animation: heroGlow 5s ease-in-out infinite;
+        }
+
+        @keyframes heroGlow {
+            0%, 100% {
+                filter: drop-shadow(0 0 8px rgba(212,175,55,.1));
+            }
+            50% {
+                filter: drop-shadow(0 0 25px rgba(212,175,55,.35));
+            }
+        }
+
+        .floating {
+            animation: floating 5s ease-in-out infinite;
+        }
+
+        @keyframes floating {
+            0%,100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .fade-up {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all .8s ease;
+        }
+
+        .fade-up.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .map-container {
+            height: 560px;
+            border-radius: 24px;
+            overflow: hidden;
+            border: 1px solid rgba(212,175,55,.3);
+            box-shadow: 0 20px 70px rgba(0,0,0,.35);
+        }
+
+        #egyptMap {
+            height: 100%;
+            width: 100%;
+            background: #0d1a24;
+        }
+
+        .leaflet-popup-content-wrapper,
+        .leaflet-popup-tip {
+            background: #15120e;
+            color: #eee;
+            border: 1px solid rgba(212,175,55,.35);
+        }
+
+        .leaflet-popup-content {
+            font-family: Cairo, sans-serif;
+        }
+
+        .leaflet-control-zoom a {
+            background: #15120e !important;
+            color: #d4af37 !important;
+            border-color: #45350b !important;
+        }
+
+        .egypt-marker {
+            width: 34px;
+            height: 34px;
+            background: #d4af37;
+            color: #090806;
+            border-radius: 50% 50% 50% 0;
+            transform: rotate(-45deg);
+            border: 3px solid #fff2ae;
+            box-shadow: 0 0 20px rgba(212,175,55,.65);
+        }
+
+        .egypt-marker i {
+            transform: rotate(45deg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%;
+        }
+
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+
+        .no-scrollbar {
+            scrollbar-width: none;
+        }
+
+        .mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height .35s ease;
+        }
+
+        .mobile-menu.open {
+            max-height: 500px;
+        }
+
+        .cart-drawer {
+            transform: translateX(100%);
+            transition: transform .35s ease;
+        }
+
+        .cart-drawer.open {
+            transform: translateX(0);
+        }
+
+        .modal-bg {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity .25s ease;
+        }
+
+        .modal-bg.open {
+            opacity: 1;
+            pointer-events: auto;
+        }
+
+        .modal-card {
+            transform: scale(.94) translateY(15px);
+            transition: transform .3s ease;
+        }
+
+        .modal-bg.open .modal-card {
+            transform: scale(1) translateY(0);
+        }
+
+        .chat-scroll::-webkit-scrollbar {
+            width: 5px;
+        }
+
+        .chat-scroll::-webkit-scrollbar-thumb {
+            background: #55430e;
+        }
+
+        .product-card {
+            transition: transform .3s ease, border-color .3s ease;
+        }
+
+        .product-card:hover {
+            transform: translateY(-7px);
+        }
+
+        @media (max-width: 768px) {
+            .map-container {
+                height: 430px;
+            }
         }
     </style>
 </head>
-<body class="hieroglyph-bg selection:bg-gold-500 selection:text-black">
 
-    <header class="fixed top-0 left-0 right-0 z-50 bg-stone-950/80 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300" id="navbar">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex items-center justify-between h-20">
-                <!-- Logo -->
-                <a href="#" class="flex items-center gap-3 group">
-                    <div class="w-10 h-10 rounded-full border-2 border-gold-500 flex items-center justify-center bg-stone-900 group-hover:rotate-180 transition-transform duration-700">
-                        <i class="fa-solid fa-ankh text-gold-500 text-xl"></i>
-                    </div>
-                    <div>
-                        <span class="text-2xl font-black gold-gradient-text tracking-wide block">مِصْــر</span>
-                        <span class="text-[10px] text-amber-200/60 font-cinzel tracking-widest -mt-1 block">EGYPT ETERNAL</span>
-                    </div>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+
+<header id="navbar"
+        class="fixed top-0 left-0 right-0 z-[1000] border-b border-gold-500/20 glass">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="h-20 flex items-center justify-between">
+
+            <a href="#hero"
+               class="flex items-center gap-3 group"
+               aria-label="مصر الخالدة - الرئيسية">
+
+                <div class="w-11 h-11 rounded-full border-2 border-gold-500
+                            flex items-center justify-center
+                            bg-stone-950
+                            group-hover:rotate-[360deg]
+                            transition-transform duration-700">
+
+                    <span class="text-gold-400 text-2xl">𓂀</span>
+                </div>
+
+                <div>
+                    <span class="block text-2xl font-black gold-text">
+                        مِصْر الخالدة
+                    </span>
+
+                    <span class="block text-[9px] text-amber-200/60
+                                 tracking-[.3em] font-cinzel">
+                        EGYPT ETERNAL
+                    </span>
+                </div>
+            </a>
+
+            <nav class="hidden lg:flex items-center gap-7">
+
+                <a href="#hero" class="nav-link">الرئيسية</a>
+                <a href="#eras" class="nav-link">رحلة العصور</a>
+                <a href="#destinations" class="nav-link">الوجهات</a>
+                <a href="#map" class="nav-link">خريطة مصر</a>
+                <a href="#bazaar" class="nav-link">البازار</a>
+                <a href="#ai-guide"
+                   class="nav-link flex items-center gap-1.5">
+                    <i class="fa-solid fa-wand-magic-sparkles text-gold-400"></i>
+                    الحكيم الذكي
                 </a>
 
-                <!-- Desktop Navigation Links -->
-                <nav class="hidden md:flex items-center gap-8">
-                    <a href="#hero" class="text-stone-300 hover:text-gold-400 font-medium transition-colors text-sm">الرئيسية</a>
-                    <a href="#eras" class="text-stone-300 hover:text-gold-400 font-medium transition-colors text-sm">رحلة العصور</a>
-                    <a href="#destinations" class="text-stone-300 hover:text-gold-400 font-medium transition-colors text-sm">الوجهات والجمال</a>
-                    <a href="#bazaar" class="text-stone-300 hover:text-gold-400 font-medium transition-colors text-sm">البازار التراثي</a>
-                    <a href="#ai-guide" class="text-stone-300 hover:text-gold-400 font-medium transition-colors text-sm flex items-center gap-1.5">
-                        <i class="fa-solid fa-wand-magic-sparkles text-gold-400 animate-pulse"></i>
-                        مرشد الفراعنة الذكي
-                    </a>
-                </nav>
+            </nav>
 
-                <!-- Actions / Controls -->
-                <div class="flex items-center gap-4">
-                    <!-- Music Ambiance Toggle -->
-                    <button id="audioBtn" onclick="toggleAudio()" class="w-10 h-10 rounded-full border border-gold-500/30 flex items-center justify-center text-gold-400 hover:bg-gold-500/10 transition" title="تشغيل موسيقى الخلفية">
-                        <i class="fa-solid fa-music" id="musicIcon"></i>
-                    </button>
+            <div class="flex items-center gap-3">
 
-                    <!-- Cart Button -->
-                    <button onclick="toggleCartModal()" class="relative p-2 text-stone-300 hover:text-gold-400 transition">
-                        <i class="fa-solid fa-bag-shopping text-xl"></i>
-                        <span id="cartCount" class="absolute -top-1 -right-1 bg-gold-500 text-stone-950 text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">0</span>
-                    </button>
+                <button id="audioBtn"
+                        type="button"
+                        onclick="toggleAudio()"
+                        title="الموسيقى"
+                        class="w-10 h-10 rounded-full border border-gold-500/30
+                               flex items-center justify-center
+                               text-gold-400 hover:bg-gold-500/10 transition">
 
-                    <!-- Mobile Menu Button -->
-                    <button onclick="toggleMobileMenu()" class="md:hidden text-stone-300 hover:text-gold-400 text-xl focus:outline-none">
-                        <i class="fa-solid fa-bars" id="mobileMenuIcon"></i>
-                    </button>
-                </div>
+                    <i id="musicIcon" class="fa-solid fa-music"></i>
+                </button>
+
+                <button type="button"
+                        onclick="toggleCartModal()"
+                        aria-label="السلة"
+                        class="relative w-10 h-10
+                               flex items-center justify-center
+                               text-stone-300 hover:text-gold-400">
+
+                    <i class="fa-solid fa-bag-shopping text-xl"></i>
+
+                    <span id="cartCount"
+                          class="absolute -top-1 -right-1
+                                 bg-gold-500 text-black
+                                 text-[10px] font-black
+                                 w-5 h-5 rounded-full
+                                 flex items-center justify-center">
+                        0
+                    </span>
+                </button>
+
+                <button type="button"
+                        onclick="toggleMobileMenu()"
+                        class="lg:hidden w-10 h-10 text-stone-300
+                               hover:text-gold-400">
+
+                    <i id="mobileMenuIcon"
+                       class="fa-solid fa-bars text-xl"></i>
+                </button>
+
             </div>
         </div>
 
-        <!-- Mobile Navigation Menu -->
-        <div id="mobileMenu" class="hidden md:hidden bg-stone-900 border-b border-gold-500/20 px-4 pt-2 pb-6 space-y-3">
-            <a href="#hero" onclick="toggleMobileMenu()" class="block text-stone-300 hover:text-gold-400 py-2">الرئيسية</a>
-            <a href="#eras" onclick="toggleMobileMenu()" class="block text-stone-300 hover:text-gold-400 py-2">رحلة العصور</a>
-            <a href="#destinations" onclick="toggleMobileMenu()" class="block text-stone-300 hover:text-gold-400 py-2">الوجهات والجمال</a>
-            <a href="#bazaar" onclick="toggleMobileMenu()" class="block text-stone-300 hover:text-gold-400 py-2">البازار التراثي</a>
-            <a href="#ai-guide" onclick="toggleMobileMenu()" class="block text-gold-400 py-2 font-bold">مرشد الفراعنة الذكي AI</a>
-        </div>
-    </header>
+        <div id="mobileMenu"
+             class="mobile-menu lg:hidden">
 
-    <section id="hero" class="relative min-h-screen flex items-center justify-center pt-24 pb-16 overflow-hidden">
-        <!-- Background Overlay & Image -->
-        <div class="absolute inset-0 z-0">
-            <img src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=2000" 
-                 alt="الأهرامات في الغروب" 
-                 class="w-full h-full object-cover opacity-30 scale-105 transform hover:scale-100 transition-transform duration-10000">
-            <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-stone-950/70 to-stone-950/40"></div>
-            <div class="absolute inset-0 bg-gradient-to-r from-stone-950/90 via-transparent to-stone-950/90"></div>
+            <div class="py-4 border-t border-gold-500/10 space-y-1">
+
+                <a href="#hero" onclick="toggleMobileMenu()" class="mobile-link">
+                    الرئيسية
+                </a>
+
+                <a href="#eras" onclick="toggleMobileMenu()" class="mobile-link">
+                    رحلة العصور
+                </a>
+
+                <a href="#destinations" onclick="toggleMobileMenu()" class="mobile-link">
+                    الوجهات
+                </a>
+
+                <a href="#map" onclick="toggleMobileMenu()" class="mobile-link">
+                    خريطة مصر
+                </a>
+
+                <a href="#bazaar" onclick="toggleMobileMenu()" class="mobile-link">
+                    البازار
+                </a>
+
+                <a href="#ai-guide" onclick="toggleMobileMenu()" class="mobile-link text-gold-400">
+                    حكيم الفراعنة AI
+                </a>
+
+            </div>
         </div>
 
-        <!-- Hero Content -->
-        <div class="relative z-10 max-w-5xl mx-auto px-4 text-center space-y-8">
-            <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-gold-500/10 border border-gold-500/30 text-gold-300 text-sm font-semibold animate-bounce">
-                <i class="fa-solid fa-crown text-gold-400"></i>
-                <span>مهد التاريخ وعروس البحر والنيل</span>
+    </div>
+</header>
+
+<!-- ================= HERO ================= -->
+
+<main>
+
+<section id="hero"
+         class="relative min-h-screen flex items-center justify-center
+                pt-28 pb-20 overflow-hidden">
+
+    <div class="absolute inset-0">
+
+        <img
+            src="https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=85&w=2200"
+            alt="أهرامات الجيزة في مصر"
+            fetchpriority="high"
+            class="w-full h-full object-cover opacity-30">
+
+        <div class="absolute inset-0 bg-gradient-to-t
+                    from-stone-950 via-stone-950/80 to-stone-950/30"></div>
+
+        <div class="absolute inset-0 bg-gradient-to-r
+                    from-stone-950/80 via-transparent to-stone-950/80"></div>
+
+    </div>
+
+    <div class="relative z-10 max-w-6xl mx-auto px-4 text-center">
+
+        <div class="inline-flex items-center gap-2 px-5 py-2
+                    rounded-full bg-gold-500/10
+                    border border-gold-500/30
+                    text-gold-300 text-sm font-bold mb-7">
+
+            <i class="fa-solid fa-crown text-gold-400"></i>
+
+            <span>مهد التاريخ وعروس النيل</span>
+
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl lg:text-8xl
+                   font-black leading-tight tracking-tight">
+
+            اكتشف
+
+            <span class="block gold-text hero-glow">
+                مصر الخالدة
+            </span>
+
+        </h1>
+
+        <p class="max-w-3xl mx-auto mt-7
+                  text-stone-300 text-base sm:text-xl
+                  leading-9">
+
+            رحلة رقمية عبر آلاف السنين من الحضارة المصرية،
+            من الأهرامات والمعابد إلى النيل والصحراء والشواطئ
+            والكنوز التي جعلت مصر واحدة من أعظم الحضارات في التاريخ.
+
+        </p>
+
+        <div class="flex flex-col sm:flex-row
+                    items-center justify-center gap-4 mt-9">
+
+            <a href="#eras"
+               class="w-full sm:w-auto
+                      px-8 py-4 rounded-xl
+                      bg-gradient-to-r from-gold-700 via-gold-500 to-amber-400
+                      text-stone-950 font-black text-lg
+                      shadow-[0_0_30px_rgba(212,175,55,.2)]
+                      hover:shadow-[0_0_45px_rgba(212,175,55,.45)]
+                      transition">
+
+                ابدأ الرحلة
+
+                <i class="fa-solid fa-arrow-left mr-2"></i>
+            </a>
+
+            <a href="#ai-guide"
+               class="w-full sm:w-auto
+                      px-8 py-4 rounded-xl
+                      bg-stone-900/70
+                      border border-gold-500/40
+                      text-gold-300 font-black text-lg
+                      hover:bg-gold-500/10
+                      transition">
+
+                <i class="fa-solid fa-robot ml-2"></i>
+
+                تحدث مع حكيم الفراعنة
+            </a>
+
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-4
+                    gap-3 sm:gap-5 max-w-4xl mx-auto mt-14">
+
+            <div class="glass gold-border rounded-xl p-5">
+                <div class="text-3xl font-black gold-text">+7000</div>
+                <div class="text-xs text-stone-400 mt-1">عام من الحضارة</div>
             </div>
 
-            <h1 class="text-4xl sm:text-6xl md:text-7xl font-black tracking-tight leading-tight">
-                استكشف جلال <span class="gold-gradient-text block mt-2">الحضارة والجمال المصري</span>
-            </h1>
+            <div class="glass gold-border rounded-xl p-5">
+                <div class="text-3xl font-black gold-text">100+</div>
+                <div class="text-xs text-stone-400 mt-1">وجهة سياحية</div>
+            </div>
 
-            <p class="text-lg sm:text-xl text-stone-300 max-w-3xl mx-auto leading-relaxed">
-                من أهرامات الجيزة الخالدة ومعابد الأقصر، إلى شواطئ البحر الأحمر وواحات الصحراء العذراء.. اكتشف مصر كما لم ترَها من قبل عبر تجربة رقمية تفاعلية ثرية.
+            <div class="glass gold-border rounded-xl p-5">
+                <div class="text-3xl font-black gold-text">7</div>
+                <div class="text-xs text-stone-400 mt-1">مواقع تراث عالمي</div>
+            </div>
+
+            <div class="glass gold-border rounded-xl p-5">
+                <div class="text-3xl font-black gold-text">365</div>
+                <div class="text-xs text-stone-400 mt-1">يوم لاكتشاف مصر</div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= ERAS ================= -->
+
+<section id="eras"
+         class="py-24 border-t border-gold-500/10">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-14 fade-up">
+
+            <span class="text-gold-400 text-sm font-bold tracking-widest">
+                HISTORY
+            </span>
+
+            <h2 class="text-4xl sm:text-6xl font-black gold-text mt-2">
+                عصور مصر الخالدة
+            </h2>
+
+            <p class="text-stone-400 mt-4 max-w-2xl mx-auto">
+                تنقل بين صفحات التاريخ المصري واكتشف أهم الحضارات
+                والمعالم التي تركت بصمتها في أرض النيل.
             </p>
 
-            <!-- Action CTA Buttons -->
-            <div class="flex flex-col sm:flex-row items-center justify-center gap-4 pt-4">
-                <a href="#eras" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-gradient-to-r from-gold-600 via-gold-500 to-amber-400 text-stone-950 font-bold text-lg hover:shadow-[0_0_25px_rgba(212,175,55,0.6)] transition duration-300 flex items-center justify-center gap-2">
-                    <span>ابدأ الرحلة عبر الزمن</span>
-                    <i class="fa-solid fa-arrow-left"></i>
-                </a>
-                <a href="#ai-guide" class="w-full sm:w-auto px-8 py-4 rounded-xl bg-stone-900/80 border border-gold-500/40 text-gold-300 font-bold text-lg hover:bg-gold-500/10 transition duration-300 flex items-center justify-center gap-2 backdrop-blur-md">
-                    <i class="fa-solid fa-robot text-gold-400"></i>
-                    <span>تحدث مع المرشد الفرعوني</span>
-                </a>
-            </div>
-
-            <!-- Quick Stats -->
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 pt-12 max-w-4xl mx-auto border-t border-gold-500/20">
-                <div class="p-4 rounded-lg bg-stone-900/40 border border-stone-800">
-                    <div class="text-3xl font-extrabold gold-gradient-text font-cinzel">+7000</div>
-                    <div class="text-xs text-stone-400 mt-1">سنة من الحضارة الموثقة</div>
-                </div>
-                <div class="p-4 rounded-lg bg-stone-900/40 border border-stone-800">
-                    <div class="text-3xl font-extrabold gold-gradient-text font-cinzel">1/3</div>
-                    <div class="text-xs text-stone-400 mt-1">آثار العالم في مدينة الأقصر</div>
-                </div>
-                <div class="p-4 rounded-lg bg-stone-900/40 border border-stone-800">
-                    <div class="text-3xl font-extrabold gold-gradient-text font-cinzel">2</div>
-                    <div class="text-xs text-stone-400 mt-1">من عجائب الدنيا القديمة والحديثة</div>
-                </div>
-                <div class="p-4 rounded-lg bg-stone-900/40 border border-stone-800">
-                    <div class="text-3xl font-extrabold gold-gradient-text font-cinzel">365</div>
-                    <div class="text-xs text-stone-400 mt-1">يوم من الشمس والدفء</div>
-                </div>
-            </div>
         </div>
-    </section>
 
-    <section id="eras" class="py-24 bg-stone-950 relative border-t border-gold-500/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <!-- Section Header -->
-            <div class="text-center space-y-3 mb-16">
-                <span class="text-gold-400 font-semibold text-sm tracking-widest uppercase">التأصيل التاريخي</span>
-                <h2 class="text-3xl sm:text-5xl font-extrabold gold-gradient-text">عصور مصر الخالدة</h2>
-                <p class="text-stone-400 max-w-2xl mx-auto">تدرج عبر صفحات التاريخ الإنساني التي سطرتها أرض الكنانة</p>
-            </div>
+        <div class="flex gap-2 overflow-x-auto no-scrollbar
+                    justify-start md:justify-center pb-4">
 
-            <!-- Timeline Navigation Tabs -->
-            <div class="flex justify-center mb-12 overflow-x-auto pb-4 gap-2 sm:gap-4 no-scrollbar">
-                <button onclick="switchEra('pharaonic')" id="tab-pharaonic" class="era-tab active px-6 py-3 rounded-xl border border-gold-500 bg-gold-500/20 text-gold-300 font-bold text-sm sm:text-base whitespace-nowrap transition-all duration-300">
-                    <i class="fa-solid fa-pyramid ml-2"></i> العصر الفرعوني
-                </button>
-                <button onclick="switchEra('coptic')" id="tab-coptic" class="era-tab px-6 py-3 rounded-xl border border-stone-800 bg-stone-900 text-stone-400 font-bold text-sm sm:text-base whitespace-nowrap transition-all duration-300 hover:border-gold-500/50">
-                    <i class="fa-solid fa-church ml-2"></i> العصر القبطي
-                </button>
-                <button onclick="switchEra('islamic')" id="tab-islamic" class="era-tab px-6 py-3 rounded-xl border border-stone-800 bg-stone-900 text-stone-400 font-bold text-sm sm:text-base whitespace-nowrap transition-all duration-300 hover:border-gold-500/50">
-                    <i class="fa-solid fa-mosque ml-2"></i> العصر الإسلامي
-                </button>
-                <button onclick="switchEra('modern')" id="tab-modern" class="era-tab px-6 py-3 rounded-xl border border-stone-800 bg-stone-900 text-stone-400 font-bold text-sm sm:text-base whitespace-nowrap transition-all duration-300 hover:border-gold-500/50">
-                    <i class="fa-solid fa-city ml-2"></i> مصر الحديثة والمعاصرة
-                </button>
-            </div>
-
-            <!-- Era Card Content Container -->
-            <div id="eraCardContainer" class="gold-border-glow rounded-2xl bg-stone-900/60 p-6 sm:p-10 backdrop-blur-md transition-all duration-500">
-                <!-- Content dynamically rendered via JS -->
-            </div>
-        </div>
-    </section>
-
-    <section id="destinations" class="py-24 bg-stone-900/40 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-6">
-                <div>
-                    <span class="text-gold-400 font-semibold text-sm tracking-widest uppercase">الجمال والسياحة</span>
-                    <h2 class="text-3xl sm:text-5xl font-extrabold gold-gradient-text mt-1">كنوز لا تُنسى</h2>
-                    <p class="text-stone-400 mt-2">من سحر النيل ورمال الواحات إلى الشعب المرجانية في الشواطئ</p>
-                </div>
-
-                <!-- Destination Filter Category Buttons -->
-                <div class="flex flex-wrap gap-2">
-                    <button onclick="filterDestinations('all')" class="dest-filter active-filter px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-gold-500 text-stone-950 transition">الكل</button>
-                    <button onclick="filterDestinations('monuments')" class="dest-filter px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-stone-800 text-stone-300 hover:text-gold-400 transition">آثار وتاريخ</button>
-                    <button onclick="filterDestinations('nature')" class="dest-filter px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-stone-800 text-stone-300 hover:text-gold-400 transition">طبيعة وواحات</button>
-                    <button onclick="filterDestinations('beaches')" class="dest-filter px-4 py-2 rounded-lg text-xs sm:text-sm font-semibold bg-stone-800 text-stone-300 hover:text-gold-400 transition">شواطئ وبحر</button>
-                </div>
-            </div>
-
-            <!-- Grid Container -->
-            <div id="destinationsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Cards will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <section id="ai-guide" class="py-24 bg-stone-950 border-t border-gold-500/20 relative">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                
-                <!-- Info Column -->
-                <div class="lg:col-span-5 space-y-6">
-                    <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/30 text-amber-400 text-xs font-bold">
-                        <i class="fa-solid fa-sparkles"></i>
-                        مدعوم بذكاء Gemini الاصطناعي
-                    </div>
-                    <h2 class="text-3xl sm:text-5xl font-black text-stone-100 leading-tight">
-                        تحدث مع <span class="gold-gradient-text">حكيم الفراعنة</span>
-                    </h2>
-                    <p class="text-stone-300 leading-relaxed">
-                        مرشدك التفاعلي العليم بأسرار الأهرامات، وتاريخ الملوك، والتفاصيل السياحية الدقيقة. اسأله عن خطة رحلتك، أو أسرار التحنيط، أو أفضل وقت لزيارة أسوان!
-                    </p>
-
-                    <!-- Quick Prompt Suggestions -->
-                    <div class="space-y-3 pt-2">
-                        <span class="text-xs text-stone-400 block font-semibold">أسئلة مقترحة للبدء:</span>
-                        <div class="flex flex-wrap gap-2">
-                            <button onclick="sendQuickPrompt('اقترح لي جدول زيارة لمصر لمدة 5 أيام بميزانية متوسطة')" class="text-xs bg-stone-900 border border-stone-800 hover:border-gold-500/50 text-stone-300 p-2.5 rounded-lg transition text-right">
-                                🗺️ برنامج زيارة 5 أيام
-                            </button>
-                            <button onclick="sendQuickPrompt('ما هو سر بناء الأهرامات وما هي أهم المقابر في وادي الملوك؟')" class="text-xs bg-stone-900 border border-stone-800 hover:border-gold-500/50 text-stone-300 p-2.5 rounded-lg transition text-right">
-                                🏛️ سر بناء الأهرامات
-                            </button>
-                            <button onclick="sendQuickPrompt('ما هي أفضل الأكلات الشعبية المصرية التي يجب تجربتها؟')" class="text-xs bg-stone-900 border border-stone-800 hover:border-gold-500/50 text-stone-300 p-2.5 rounded-lg transition text-right">
-                                🍲 المطبخ المصري الشهير
-                            </button>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Chat Console Column -->
-                <div class="lg:col-span-7">
-                    <div class="gold-border-glow rounded-2xl bg-stone-900/90 overflow-hidden flex flex-col h-[520px] shadow-2xl">
-                        <!-- Chat Header -->
-                        <div class="bg-stone-950 px-6 py-4 border-b border-stone-800 flex items-center justify-between">
-                            <div class="flex items-center gap-3">
-                                <div class="w-10 h-10 rounded-full bg-gold-500/20 border border-gold-500 flex items-center justify-center text-gold-400">
-                                    <i class="fa-solid fa-eye text-lg"></i>
-                                </div>
-                                <div>
-                                    <h3 class="font-bold text-stone-100 text-sm">حكيم الفراعنة - المرشد الأثري</h3>
-                                    <span class="text-[11px] text-emerald-400 flex items-center gap-1">
-                                        <span class="w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span> متصل وجاهز لإجابتك
-                                    </span>
-                                </div>
-                            </div>
-                            <span class="text-xs text-stone-500 font-mono">Gemini 3 Flash</span>
-                        </div>
-
-                        <!-- Chat Messages History -->
-                        <div id="chatMessages" class="flex-1 p-6 overflow-y-auto space-y-4">
-                            <!-- Bot Welcome Message -->
-                            <div class="flex gap-3 items-start">
-                                <div class="w-8 h-8 rounded-full bg-gold-500/20 border border-gold-500/40 flex items-center justify-center text-gold-400 flex-shrink-0 text-xs">
-                                    <i class="fa-solid fa-ankh"></i>
-                                </div>
-                                <div class="bg-stone-800/80 border border-stone-700 text-stone-200 p-4 rounded-2xl rounded-tr-none text-sm leading-relaxed max-w-[85%]">
-                                    مرحباً بك يا صديقي في رحاب مصر الخالدة! أنا "حكيم الفراعنة"، حارس الحكمة المرشد الأثري. كيف يمكنني مساعدتك في اكتشاف أسرار مصر أو التخطيط لزيارتك؟
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Chat Input Bar -->
-                        <form id="chatForm" onsubmit="handleChatSubmit(event)" class="p-4 bg-stone-950 border-t border-stone-800 flex gap-2">
-                            <input type="text" id="userInput" placeholder="اسأل حكيم الفراعنة عن التاريخ، الآثار، أو التخطيط للسفر..." 
-                                   class="flex-1 bg-stone-900 border border-stone-800 focus:border-gold-500 text-stone-200 px-4 py-3 rounded-xl text-sm focus:outline-none transition">
-                            <button type="submit" id="sendBtn" class="bg-gold-500 hover:bg-gold-400 text-stone-950 px-5 py-3 rounded-xl font-bold transition flex items-center justify-center">
-                                <i class="fa-solid fa-paper-plane"></i>
-                            </button>
-                        </form>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <section id="bazaar" class="py-24 bg-stone-900/60 border-t border-gold-500/10">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center space-y-3 mb-16">
-                <span class="text-gold-400 font-semibold text-sm tracking-widest uppercase">التراث والحرف اليدوية</span>
-                <h2 class="text-3xl sm:text-5xl font-extrabold gold-gradient-text">البازار المصري التراثي</h2>
-                <p class="text-stone-400 max-w-2xl mx-auto">صناعات يدوية أصيلة نُقلت أسرارها عبر الأجيال من خان الخليلي وقرى النوبة وفخار قنا</p>
-            </div>
-
-            <!-- Products Grid -->
-            <div id="bazaarGrid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Javascript will inject products -->
-            </div>
-        </div>
-    </section>
-
-    <!-- VR / Detail Modal -->
-    <div id="detailModal" class="fixed inset-0 z-50 hidden bg-stone-950/90 backdrop-blur-md flex items-center justify-center p-4">
-        <div class="bg-stone-900 border border-gold-500/30 rounded-2xl max-w-3xl w-full overflow-hidden shadow-2xl relative animate-fadeIn">
-            <button onclick="closeModal()" class="absolute top-4 left-4 z-10 w-10 h-10 rounded-full bg-stone-950/80 text-stone-300 hover:text-gold-400 flex items-center justify-center transition">
-                <i class="fa-solid fa-xmark text-xl"></i>
+            <button onclick="switchEra('pharaonic')"
+                    id="tab-pharaonic"
+                    class="era-tab active-tab">
+                <i class="fa-solid fa-pyramid ml-2"></i>
+                الفرعوني
             </button>
-            <div id="modalContent">
-                <!-- Dynamically loaded -->
-            </div>
-        </div>
-    </div>
 
-    <!-- Shopping Cart Slide-over/Modal -->
-    <div id="cartModal" class="fixed inset-0 z-50 hidden bg-stone-950/80 backdrop-blur-sm flex justify-end">
-        <div class="w-full max-w-md bg-stone-900 h-full border-r border-gold-500/20 p-6 flex flex-col justify-between overflow-y-auto">
-            <div>
-                <div class="flex items-center justify-between pb-6 border-b border-stone-800">
-                    <h3 class="text-xl font-bold gold-gradient-text flex items-center gap-2">
-                        <i class="fa-solid fa-bag-shopping"></i> حقيبة التذكارات
-                    </h3>
-                    <button onclick="toggleCartModal()" class="text-stone-400 hover:text-stone-200">
-                        <i class="fa-solid fa-xmark text-xl"></i>
-                    </button>
-                </div>
-                <div id="cartItemsList" class="py-6 space-y-4">
-                    <!-- Cart items rendered here -->
-                </div>
-            </div>
-            
-            <div class="border-t border-stone-800 pt-6 space-y-4">
-                <div class="flex justify-between items-center text-lg font-bold">
-                    <span>الإجمالي:</span>
-                    <span id="cartTotal" class="text-gold-400 font-cinzel">0$</span>
-                </div>
-                <button onclick="checkoutCart()" class="w-full py-3.5 rounded-xl bg-gold-500 text-stone-950 font-bold hover:bg-gold-400 transition">
-                    إتمام الطلب التذكاري
-                </button>
-            </div>
-        </div>
-    </div>
+            <button onclick="switchEra('coptic')"
+                    id="tab-coptic"
+                    class="era-tab">
+                <i class="fa-solid fa-church ml-2"></i>
+                القبطي
+            </button>
 
-    <footer class="bg-stone-950 border-t border-gold-500/20 py-16 text-stone-400 text-sm">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
-            <div class="space-y-4">
-                <div class="flex items-center gap-3">
-                    <div class="w-8 h-8 rounded-full border border-gold-500 flex items-center justify-center text-gold-400">
-                        <i class="fa-solid fa-ankh"></i>
-                    </div>
-                    <span class="text-xl font-black text-stone-100 gold-gradient-text">مِصْــر الخالدة</span>
-                </div>
-                <p class="text-xs leading-relaxed text-stone-400">
-                    "مصر ليست دولة تاريخية فحسب، مصر جاءت أولاً ثم جاء التاريخ." — هيرودوت
+            <button onclick="switchEra('islamic')"
+                    id="tab-islamic"
+                    class="era-tab">
+                <i class="fa-solid fa-mosque ml-2"></i>
+                الإسلامي
+            </button>
+
+            <button onclick="switchEra('modern')"
+                    id="tab-modern"
+                    class="era-tab">
+                <i class="fa-solid fa-city ml-2"></i>
+                الحديثة
+            </button>
+
+        </div>
+
+        <div id="eraCardContainer"
+             class="gold-border rounded-3xl
+                    bg-stone-900/70 p-5 sm:p-10
+                    backdrop-blur-md mt-5">
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= DESTINATIONS ================= -->
+
+<section id="destinations"
+         class="py-24 bg-stone-900/40 border-t border-gold-500/10">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="flex flex-col lg:flex-row
+                    lg:items-end justify-between gap-7 mb-12">
+
+            <div class="fade-up">
+
+                <span class="text-gold-400 text-sm font-bold tracking-widest">
+                    EXPLORE EGYPT
+                </span>
+
+                <h2 class="text-4xl sm:text-6xl
+                           font-black gold-text mt-2">
+                    وجهات لا تُنسى
+                </h2>
+
+                <p class="text-stone-400 mt-3">
+                    من الأهرامات إلى البحر الأحمر وواحات الصحراء.
                 </p>
+
             </div>
-            <div>
-                <h4 class="text-stone-200 font-bold mb-4 border-r-2 border-gold-500 pr-2">روابط سريعة</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="#eras" class="hover:text-gold-400 transition">العصور الفرعونية والقبطية والإسلامية</a></li>
-                    <li><a href="#destinations" class="hover:text-gold-400 transition">الأهرامات ووادي الملوك</a></li>
-                    <li><a href="#destinations" class="hover:text-gold-400 transition">سيوة وشرم الشيخ ودهب</a></li>
-                    <li><a href="#bazaar" class="hover:text-gold-400 transition">البازار والمصنوعات اليدوية</a></li>
-                </ul>
+
+            <div class="flex flex-wrap gap-2">
+
+                <button onclick="filterDestinations('all', this)"
+                        class="dest-filter active-filter">
+                    الكل
+                </button>
+
+                <button onclick="filterDestinations('monuments', this)"
+                        class="dest-filter">
+                    آثار وتاريخ
+                </button>
+
+                <button onclick="filterDestinations('nature', this)"
+                        class="dest-filter">
+                    طبيعة وواحات
+                </button>
+
+                <button onclick="filterDestinations('beaches', this)"
+                        class="dest-filter">
+                    شواطئ وبحر
+                </button>
+
             </div>
-            <div>
-                <h4 class="text-stone-200 font-bold mb-4 border-r-2 border-gold-500 pr-2">معلومات الزوار</h4>
-                <ul class="space-y-2 text-xs">
-                    <li><a href="#" class="hover:text-gold-400 transition">تأشيرة الدخول لمصر (e-Visa)</a></li>
-                    <li><a href="#" class="hover:text-gold-400 transition">أفضل مواسم الزيارة</a></li>
-                    <li><a href="#" class="hover:text-gold-400 transition">المتاحف الكبرى والجولات VR</a></li>
-                </ul>
-            </div>
-            <div class="space-y-4">
-                <h4 class="text-stone-200 font-bold border-r-2 border-gold-500 pr-2">النشرة البريدية للتاريخ</h4>
-                <p class="text-xs text-stone-400">اشترك لتصلك قصص وأسرار الاكتشافات الأثرية الحديثة.</p>
-                <div class="flex gap-2">
-                    <input type="email" placeholder="بريدك الإلكتروني" class="bg-stone-900 border border-stone-800 rounded-lg px-3 py-2 text-xs w-full focus:outline-none focus:border-gold-500">
-                    <button class="bg-gold-500 text-stone-950 px-4 rounded-lg font-bold text-xs hover:bg-gold-400 transition">اشتراك</button>
-                </div>
-            </div>
+
         </div>
-        <div class="max-w-7xl mx-auto px-4 mt-12 pt-6 border-t border-stone-900 text-center text-xs text-stone-500">
-            جميع الحقوق محفوظة © 2026 منصة "مصر الخالدة - Egypt Eternal". مصمم بإتقان وشغف للثقافة المصرية.
+
+        <div id="destinationsGrid"
+             class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-7">
         </div>
-    </footer>
 
-    <script>
-        // Data Structures
-        const erasData = {
-            pharaonic: {
-                title: "العصر الفرعوني (3100 ق.م - 332 ق.م)",
-                subtitle: "عصر الأهرامات والملوك العظام والسحر المعماري",
-                image: "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&q=80&w=1200",
-                description: "حقبة امتدت لآلاف السنين شهدت بناء عجائب الدنيا السبع كأهرامات الجيزة ومعابد الكرنك وأبو سمبل. ابتكار الكتابة الهيروغليفية والتقويم الشمسي وأساسيات الطب والتحنيط والهندسة.",
-                highlights: ["أهرامات الجيزة وأبو الهول", "معبد الكرنك ووادي الملوك بالأقصر", "مقبرة الملك توت عنخ آمون", "قناع نِفرتيتي ومعبد أبو سمبل"]
-            },
-            coptic: {
-                title: "العصر القبطي (القرن الأول الميلادي - القرن السابع)",
-                subtitle: "رحلة العائلة المقدسة وتراث الأديرة الخالدة",
-                image: "https://images.unsplash.com/photo-1548625149-fc4a29cf7092?auto=format&fit=crop&q=80&w=1200",
-                description: "دخلت المسيحية مصر على يد القديس مرقس، واحتضنت أرض مصر العائلة المقدسة في رحلتها الشهيرة. تميز هذا العصر بنشأة الرهبنة للعالم عبر القديس أنطونيوس وتشييد الكنائس الأثرية ذات الطراز المعماري المتميز.",
-                highlights: ["الكنيسة المعلقة بمصر القديمة", "دير سانت كاترين في سيناء", "أديرة وادي النطرون", "شجرة مريم بمطرية القاهرة"]
-            },
-            islamic: {
-                title: "العصر الإسلامي (641 م - 1798 م)",
-                subtitle: "القاهرة المعزية وعروس الفن المعماري الإسلامي",
-                image: "https://images.unsplash.com/photo-1572252821143-035a22284ec1?auto=format&fit=crop&q=80&w=1200",
-                description: "تحولت مصر لمقر الخلافة الفاطمية والمملوكية، ونشأت 'القاهرة الألف مئذنة'. ازدهرت العلوم والعمارة وتأسس الجامع الأزهر الشريف والأسواق القديمة كخان الخليلي.",
-                highlights: ["قلعة صلاح الدين الأيوبي", "الجامع الأزهر ومسجد السلطان حسن", "شارع المعز لدين الله الفاطمي", "سوق خان الخليلي والتراث الفضي"]
-            },
-            modern: {
-                title: "مصر الحديثة والمعاصرة (1805 م - الحاضر)",
-                subtitle: "نهضة محمد علي والمشروعات العملاقة والمتاحف العالمية",
-                image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=80&w=1200",
-                description: "بدأت بقناة السويس وتشييد القاهرة الخديوية ذات الطراز الأوروبي، وصولاً إلى المتحف المصري الكبير GEM والعاصمة الإدارية وشبكات المتاحف القومية التي تجسد عظمة الحاضر.",
-                highlights: ["المتحف المصري الكبير (GEM)", "دار الأوبرا المصرية وقناة السويس", "القاهرة الخديوية وكوبري قصر النيل", "المتحف القومي للحضارة المصرية"]
-            }
-        };
+    </div>
+</section>
 
-        const destinations = [
-            {
-                id: 1,
-                name: "أهرامات الجيزة وأبو الهول",
-                category: "monuments",
-                location: "الجيزة",
-                image: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=800",
-                desc: "إحدى عجائب الدنيا السبع القديمة الباقية، تقف شامخة تشهد على عبقرية الهندسة الفرعونية.",
-                vrUrl: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=80&w=1600"
-            },
-            {
-                id: 2,
-                name: "واحة سيوة العذراء",
-                category: "nature",
-                location: "الصحراء الغربية",
-                image: "https://images.unsplash.com/photo-1544885935-98dd03b09034?auto=format&fit=crop&q=80&w=800",
-                desc: "بحيرات الملح الكريستالية، وعيون كليوباترا الكبريتية، وقلعة شالي الأثرية في قلب الصحراء.",
-                vrUrl: "https://images.unsplash.com/photo-1544885935-98dd03b09034?auto=format&fit=crop&q=80&w=1600"
-            },
-            {
-                id: 3,
-                name: "معابد الأقصر والكرنك",
-                category: "monuments",
-                location: "الأقصر",
-                image: "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&q=80&w=800",
-                desc: "أعظم متحف مفتوح في العالم يضم أعمدة الكرنك العملاقة ووادي الملوك والملكات.",
-                vrUrl: "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&q=80&w=1600"
-            },
-            {
-                id: 4,
-                name: "شواطئ دهب والبلو هول",
-                category: "beaches",
-                location: "جنوب سيناء",
-                image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=800",
-                desc: "جنة الغواصين وعشاق الاسترخاء والمغامرة مع أجمل الشعب المرجانية والجبال السيناوية.",
-                vrUrl: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=80&w=1600"
-            },
-            {
-                id: 5,
-                name: "قرى النوبة ومعبد فيلة",
-                category: "nature",
-                location: "أسوان",
-                image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=80&w=800",
-                desc: "الألوان البهيجة، وحفاوة أهل النوبة الكرام، وجزيرة فيلة المكرسة للإلهة إيزيس وسط النيل.",
-                vrUrl: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=80&w=1600"
-            },
-            {
-                id: 6,
-                name: "شارع المعز وخان الخليلي",
-                category: "monuments",
-                location: "القاهرة",
-                image: "https://images.unsplash.com/photo-1572252821143-035a22284ec1?auto=format&fit=crop&q=80&w=800",
-                desc: "قلب القاهرة التاريخية، المآذن الفاطمية، المكسوات الفضية ورائحة البخور والقهوة الفيشاوي.",
-                vrUrl: "https://images.unsplash.com/photo-1572252821143-035a22284ec1?auto=format&fit=crop&q=80&w=1600"
-            }
-        ];
+<!-- ================= MAP ================= -->
 
-        const bazaarProducts = [
-            { id: 101, name: "بردية فرعونية مذهبة يدوية", price: 45, image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=80&w=500", rating: 4.9 },
-            { id: 102, name: "قلادة خرطوش فضية مع اسمك", price: 60, image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=80&w=500", rating: 5.0 },
-            { id: 103, name: "تمثال قطة باستت مصنوع يدوياً", price: 35, image: "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&q=80&w=500", rating: 4.8 },
-            { id: 104, name: "سجاد نوبي يدوياً من خيوط الصوف", price: 110, image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&q=80&w=500", rating: 4.9 }
-        ];
+<section id="map"
+         class="py-24 border-t border-gold-500/10">
 
-        let cart = [];
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
-        function switchEra(eraKey) {
-            const era = erasData[eraKey];
-            if (!era) return;
+        <div class="text-center mb-12 fade-up">
 
-            // Highlight Tab Button
-            document.querySelectorAll('.era-tab').forEach(tab => {
-                tab.classList.remove('active', 'border-gold-500', 'bg-gold-500/20', 'text-gold-300');
-                tab.classList.add('border-stone-800', 'bg-stone-900', 'text-stone-400');
-            });
-            const selectedTab = document.getElementById(`tab-${eraKey}`);
-            if (selectedTab) {
-                selectedTab.classList.add('active', 'border-gold-500', 'bg-gold-500/20', 'text-gold-300');
-                selectedTab.classList.remove('border-stone-800', 'bg-stone-900', 'text-stone-400');
-            }
+            <span class="text-gold-400 text-sm font-bold tracking-widest">
+                EGYPT MAP
+            </span>
 
-            // Render Card
-            const container = document.getElementById('eraCardContainer');
-            container.innerHTML = `
-                <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
-                    <div class="lg:col-span-7 space-y-4">
-                        <span class="text-xs font-mono text-gold-400 border border-gold-500/30 px-3 py-1 rounded-full bg-gold-500/10">حقبة تاريخية</span>
-                        <h3 class="text-2xl sm:text-4xl font-extrabold text-stone-100">${era.title}</h3>
-                        <p class="text-gold-400 text-sm font-semibold">${era.subtitle}</p>
-                        <p class="text-stone-300 leading-relaxed text-sm sm:text-base">${era.description}</p>
-                        <div class="pt-2">
-                            <h4 class="text-xs font-bold text-stone-400 uppercase tracking-wider mb-2">أبرز معالم وإنجازات العصر:</h4>
-                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                                ${era.highlights.map(h => `
-                                    <div class="flex items-center gap-2 text-xs sm:text-sm text-stone-200">
-                                        <i class="fa-solid fa-square-check text-gold-400"></i>
-                                        <span>${h}</span>
-                                    </div>
-                                `).join('')}
-                            </div>
-                        </div>
-                    </div>
-                    <div class="lg:col-span-5">
-                        <div class="relative rounded-xl overflow-hidden group shadow-xl border border-gold-500/20">
-                            <img src="${era.image}" alt="${era.title}" class="w-full h-72 sm:h-80 object-cover transform group-hover:scale-105 transition duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-stone-950 via-transparent to-transparent"></div>
-                        </div>
-                    </div>
+            <h2 class="text-4xl sm:text-6xl font-black gold-text mt-2">
+                خريطة مصر السياحية
+            </h2>
+
+            <p class="text-stone-400 mt-4">
+                اختر وجهتك واستكشف موقعها على الخريطة.
+            </p>
+
+        </div>
+
+        <div class="map-container">
+            <div id="egyptMap"></div>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= AI ================= -->
+
+<section id="ai-guide"
+         class="py-24 bg-stone-950 border-t border-gold-500/20">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+
+            <div class="lg:col-span-5 fade-up">
+
+                <div class="inline-flex items-center gap-2
+                            px-4 py-2 rounded-full
+                            bg-gold-500/10
+                            border border-gold-500/30
+                            text-gold-400 text-xs font-bold">
+
+                    <i class="fa-solid fa-sparkles"></i>
+
+                    مرشد ذكي
                 </div>
-            `;
-        }
 
-        function filterDestinations(category) {
-            document.querySelectorAll('.dest-filter').forEach(btn => {
-                btn.classList.remove('bg-gold-500', 'text-stone-950');
-                btn.classList.add('bg-stone-800', 'text-stone-300');
-            });
-            event.target.classList.add('bg-gold-500', 'text-stone-950');
-            event.target.classList.remove('bg-stone-800', 'text-stone-300');
+                <h2 class="text-4xl sm:text-6xl
+                           font-black text-stone-100
+                           leading-tight mt-5">
 
-            const filtered = category === 'all' ? destinations : destinations.filter(d => d.category === category);
-            renderDestinations(filtered);
-        }
+                    حكيم
 
-        function renderDestinations(items) {
-            const grid = document.getElementById('destinationsGrid');
-            grid.innerHTML = items.map(item => `
-                <div class="gold-border-glow bg-stone-900/80 rounded-2xl overflow-hidden flex flex-col justify-between transition duration-300 hover:-translate-y-1">
-                    <div>
-                        <div class="relative h-52 overflow-hidden">
-                            <img src="${item.image}" alt="${item.name}" class="w-full h-full object-cover transform hover:scale-110 transition duration-500">
-                            <span class="absolute top-3 right-3 bg-stone-950/80 border border-gold-500/40 text-gold-300 text-xs px-3 py-1 rounded-full font-bold">
-                                <i class="fa-solid fa-location-dot text-gold-400 ml-1"></i>${item.location}
-                            </span>
-                        </div>
-                        <div class="p-6 space-y-2">
-                            <h3 class="text-xl font-bold text-stone-100">${item.name}</h3>
-                            <p class="text-stone-400 text-xs sm:text-sm leading-relaxed">${item.desc}</p>
-                        </div>
-                    </div>
-                    <div class="p-6 pt-0">
-                        <button onclick="openVrModal('${item.name}', '${item.vrUrl}', '${item.desc}')" class="w-full py-2.5 rounded-xl border border-gold-500/40 text-gold-300 hover:bg-gold-500 hover:text-stone-950 font-bold text-xs sm:text-sm transition flex items-center justify-center gap-2">
-                            <i class="fa-solid fa-vr-cardboard"></i>
-                            استعراض المعلم 360°
-                        </button>
-                    </div>
-                </div>
-            `).join('');
-        }
+                    <span class="gold-text">
+                        الفراعنة
+                    </span>
+                </h2>
 
-        function renderBazaar() {
-            const grid = document.getElementById('bazaarGrid');
-            grid.innerHTML = bazaarProducts.map(p => `
-                <div class="bg-stone-900/90 border border-stone-800 rounded-2xl p-4 flex flex-col justify-between hover:border-gold-500/50 transition">
-                    <div>
-                        <img src="${p.image}" alt="${p.name}" class="w-full h-48 object-cover rounded-xl mb-4">
-                        <div class="flex items-center justify-between mb-1">
-                            <span class="text-xs text-amber-400 font-bold"><i class="fa-solid fa-star"></i> ${p.rating}</span>
-                            <span class="text-gold-400 font-bold font-cinzel text-lg">$${p.price}</span>
-                        </div>
-                        <h4 class="font-bold text-stone-200 text-sm">${p.name}</h4>
-                    </div>
-                    <button onclick="addToCart(${p.id})" class="mt-4 w-full py-2 bg-stone-800 hover:bg-gold-500 hover:text-stone-950 text-gold-300 text-xs font-bold rounded-lg transition">
-                        إضافة للحقيبة
+                <p class="text-stone-300 leading-8 mt-5">
+
+                    اسأل المرشد الذكي عن التاريخ المصري،
+                    الآثار، الوجهات، الطعام، أو خطط السفر.
+                    يتم الاتصال بالـ Gemini من خلال Backend
+                    لحماية مفتاح API وعدم إظهاره للزائر.
+
+                </p>
+
+                <div class="flex flex-wrap gap-2 mt-7">
+
+                    <button onclick="sendQuickPrompt('اقترح لي برنامج سياحي في مصر لمدة 5 أيام بميزانية متوسطة')"
+                            class="prompt-btn">
+                        🗺️ برنامج 5 أيام
                     </button>
+
+                    <button onclick="sendQuickPrompt('حدثني عن طريقة بناء الأهرامات')"
+                            class="prompt-btn">
+                        🏛️ بناء الأهرامات
+                    </button>
+
+                    <button onclick="sendQuickPrompt('ما أفضل الأكلات المصرية التي يجب تجربتها؟')"
+                            class="prompt-btn">
+                        🍲 الأكلات المصرية
+                    </button>
+
                 </div>
-            `).join('');
+
+            </div>
+
+            <div class="lg:col-span-7">
+
+                <div class="gold-border rounded-3xl
+                            overflow-hidden
+                            bg-stone-900/90
+                            h-[600px]
+                            flex flex-col">
+
+                    <div class="bg-stone-950 p-5
+                                border-b border-stone-800
+                                flex items-center justify-between">
+
+                        <div class="flex items-center gap-3">
+
+                            <div class="w-11 h-11 rounded-full
+                                        bg-gold-500/15
+                                        border border-gold-500/50
+                                        flex items-center justify-center
+                                        text-gold-400">
+
+                                <span class="text-xl">𓂀</span>
+                            </div>
+
+                            <div>
+                                <h3 class="font-bold">
+                                    حكيم الفراعنة
+                                </h3>
+
+                                <span class="text-xs text-emerald-400">
+                                    ● متصل وجاهز
+                                </span>
+                            </div>
+
+                        </div>
+
+                        <span class="text-xs text-stone-500">
+                            Gemini
+                        </span>
+
+                    </div>
+
+                    <div id="chatMessages"
+                         class="flex-1 p-5 overflow-y-auto
+                                space-y-4 chat-scroll">
+
+                        <div class="flex gap-3">
+
+                            <div class="w-8 h-8 rounded-full
+                                        bg-gold-500/20
+                                        flex-shrink-0
+                                        flex items-center justify-center
+                                        text-gold-400">
+                                𓂀
+                            </div>
+
+                            <div class="bg-stone-800
+                                        border border-stone-700
+                                        p-4 rounded-2xl rounded-tr-none
+                                        text-sm leading-7 max-w-[85%]">
+
+                                مرحباً بك يا صديقي في رحاب مصر الخالدة!
+                                أنا حكيم الفراعنة. كيف يمكنني مساعدتك؟
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <form id="chatForm"
+                          onsubmit="handleChatSubmit(event)"
+                          class="p-4 bg-stone-950
+                                 border-t border-stone-800
+                                 flex gap-2">
+
+                        <input
+                            id="userInput"
+                            autocomplete="off"
+                            required
+                            placeholder="اسأل عن مصر..."
+                            class="flex-1 bg-stone-900
+                                   border border-stone-800
+                                   focus:border-gold-500
+                                   text-stone-200
+                                   px-4 py-3 rounded-xl
+                                   outline-none">
+
+                        <button id="sendBtn"
+                                type="submit"
+                                class="bg-gold-500 hover:bg-gold-400
+                                       text-stone-950
+                                       px-5 rounded-xl font-black">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                        </button>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= BAZAAR ================= -->
+
+<section id="bazaar"
+         class="py-24 bg-stone-900/50 border-t border-gold-500/10">
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+
+        <div class="text-center mb-14 fade-up">
+
+            <span class="text-gold-400 text-sm font-bold tracking-widest">
+                EGYPTIAN CRAFTS
+            </span>
+
+            <h2 class="text-4xl sm:text-6xl font-black gold-text mt-2">
+                البازار المصري
+            </h2>
+
+            <p class="text-stone-400 mt-4 max-w-2xl mx-auto">
+                منتجات مستوحاة من التراث المصري والحرف اليدوية.
+            </p>
+
+        </div>
+
+        <div id="bazaarGrid"
+             class="grid grid-cols-1 sm:grid-cols-2
+                    lg:grid-cols-4 gap-7">
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<!-- ================= DETAIL MODAL ================= -->
+
+<div id="detailModal"
+     class="modal-bg fixed inset-0 z-[2000]
+            bg-black/80 backdrop-blur-md
+            flex items-center justify-center p-4">
+
+    <div class="modal-card bg-stone-900
+                border border-gold-500/30
+                rounded-3xl max-w-3xl w-full
+                overflow-hidden relative">
+
+        <button onclick="closeModal()"
+                class="absolute top-4 left-4 z-10
+                       w-10 h-10 rounded-full
+                       bg-black/70
+                       text-stone-300
+                       hover:text-gold-400">
+
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+
+        <div id="modalContent"></div>
+
+    </div>
+</div>
+
+<!-- ================= CART ================= -->
+
+<div id="cartOverlay"
+     onclick="toggleCartModal()"
+     class="modal-bg fixed inset-0 z-[1500]
+            bg-black/70 backdrop-blur-sm">
+</div>
+
+<div id="cartDrawer"
+     class="cart-drawer fixed top-0 right-0
+            z-[1600] h-full w-full max-w-md
+            bg-stone-900 border-l
+            border-gold-500/20
+            p-6 flex flex-col">
+
+    <div class="flex items-center justify-between
+                pb-5 border-b border-stone-800">
+
+        <h3 class="text-xl font-black gold-text">
+            <i class="fa-solid fa-bag-shopping ml-2"></i>
+            حقيبة التذكارات
+        </h3>
+
+        <button onclick="toggleCartModal()"
+                class="text-stone-400 hover:text-white">
+
+            <i class="fa-solid fa-xmark text-xl"></i>
+        </button>
+
+    </div>
+
+    <div id="cartItemsList"
+         class="flex-1 overflow-y-auto py-5 space-y-3">
+    </div>
+
+    <div class="border-t border-stone-800 pt-5">
+
+        <div class="flex justify-between
+                    text-lg font-black mb-4">
+
+            <span>الإجمالي</span>
+
+            <span id="cartTotal"
+                  class="text-gold-400">
+                $0
+            </span>
+
+        </div>
+
+        <button onclick="checkoutCart()"
+                class="w-full py-3.5 rounded-xl
+                       bg-gold-500
+                       hover:bg-gold-400
+                       text-stone-950
+                       font-black">
+
+            إتمام الطلب
+
+        </button>
+
+    </div>
+
+</div>
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="bg-stone-950
+               border-t border-gold-500/20
+               py-16">
+
+    <div class="max-w-7xl mx-auto px-4
+                sm:px-6 lg:px-8">
+
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+
+            <div>
+
+                <div class="text-2xl font-black gold-text mb-4">
+                    مِصْر الخالدة
+                </div>
+
+                <p class="text-stone-500 text-sm leading-7">
+                    تجربة رقمية لاكتشاف الحضارة المصرية
+                    والتاريخ والوجهات السياحية في مصر.
+                </p>
+
+            </div>
+
+            <div>
+
+                <h4 class="font-bold text-white mb-4">
+                    استكشف
+                </h4>
+
+                <div class="space-y-2 text-sm text-stone-500">
+
+                    <a href="#eras" class="footer-link">العصور</a>
+                    <a href="#destinations" class="footer-link">الوجهات</a>
+                    <a href="#map" class="footer-link">الخريطة</a>
+                    <a href="#ai-guide" class="footer-link">حكيم الفراعنة</a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4 class="font-bold text-white mb-4">
+                    الوجهات
+                </h4>
+
+                <div class="space-y-2 text-sm text-stone-500">
+
+                    <a href="#destinations" class="footer-link">الأهرامات</a>
+                    <a href="#destinations" class="footer-link">الأقصر</a>
+                    <a href="#destinations" class="footer-link">أسوان</a>
+                    <a href="#destinations" class="footer-link">دهب</a>
+
+                </div>
+
+            </div>
+
+            <div>
+
+                <h4 class="font-bold text-white mb-4">
+                    مصر الخالدة
+                </h4>
+
+                <p class="text-stone-500 text-sm leading-7">
+                    الحضارة لا تنتهي عندما ينتهي الماضي،
+                    بل تستمر عندما نروي قصته.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="border-t border-stone-900
+                    mt-12 pt-6 text-center
+                    text-xs text-stone-600">
+
+            © 2026 مصر الخالدة - Egypt Eternal
+            جميع الحقوق محفوظة.
+
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- Leaflet -->
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+
+<script>
+/* =========================================================
+   DATA
+========================================================= */
+
+const erasData = {
+
+    pharaonic: {
+        title: "العصر الفرعوني",
+        subtitle: "عصر الأهرامات والملوك العظام",
+        period: "3100 ق.م - 332 ق.م",
+        image: "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&q=85&w=1200",
+        description:
+            "شهدت مصر القديمة آلاف السنين من التطور السياسي والعلمي والفني، وشهد هذا العصر بناء الأهرامات والمعابد والمقابر الملكية وتطور الكتابة والطب والهندسة.",
+        highlights: [
+            "أهرامات الجيزة وأبو الهول",
+            "معابد الكرنك والأقصر",
+            "وادي الملوك",
+            "مقبرة توت عنخ آمون"
+        ]
+    },
+
+    coptic: {
+        title: "العصر القبطي",
+        subtitle: "تراث الكنائس والأديرة ورحلة العائلة المقدسة",
+        period: "القرن الأول - القرن السابع الميلادي",
+        image: "https://images.unsplash.com/photo-1548625149-fc4a29cf7092?auto=format&fit=crop&q=85&w=1200",
+        description:
+            "يمثل التراث القبطي جزءاً مهماً من تاريخ مصر، ويضم كنائس وأديرة ومواقع مرتبطة بتاريخ المسيحية المبكر والرهبنة المصرية.",
+        highlights: [
+            "الكنيسة المعلقة",
+            "وادي النطرون",
+            "دير سانت كاترين",
+            "مواقع رحلة العائلة المقدسة"
+        ]
+    },
+
+    islamic: {
+        title: "العصر الإسلامي",
+        subtitle: "القاهرة التاريخية وفنون العمارة الإسلامية",
+        period: "641 م - العصر الحديث",
+        image: "https://images.unsplash.com/photo-1572252821143-035a22284ec1?auto=format&fit=crop&q=85&w=1200",
+        description:
+            "ازدهرت في مصر خلال العصور الإسلامية العمارة والعلوم والأسواق والمدن التاريخية، وأصبحت القاهرة واحدة من أهم مراكز الحضارة في المنطقة.",
+        highlights: [
+            "الجامع الأزهر",
+            "شارع المعز",
+            "قلعة صلاح الدين",
+            "خان الخليلي"
+        ]
+    },
+
+    modern: {
+        title: "مصر الحديثة والمعاصرة",
+        subtitle: "من القاهرة الخديوية إلى المتاحف العالمية",
+        period: "1805 م - الحاضر",
+        image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=85&w=1200",
+        description:
+            "مرت مصر خلال العصر الحديث بتحولات كبيرة في العمران والاقتصاد والثقافة، وأصبحت تضم مؤسسات ومتاحف ومشروعات حديثة إلى جانب تراثها التاريخي.",
+        highlights: [
+            "المتحف المصري الكبير",
+            "قناة السويس",
+            "القاهرة الخديوية",
+            "المتحف القومي للحضارة المصرية"
+        ]
+    }
+};
+
+const destinations = [
+
+    {
+        id: 1,
+        name: "أهرامات الجيزة وأبو الهول",
+        category: "monuments",
+        location: "الجيزة",
+        lat: 29.9792,
+        lng: 31.1342,
+        image: "https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?auto=format&fit=crop&q=85&w=900",
+        desc: "واحدة من أعظم معالم الحضارة المصرية القديمة وأشهر المواقع الأثرية في العالم."
+    },
+
+    {
+        id: 2,
+        name: "معابد الأقصر والكرنك",
+        category: "monuments",
+        location: "الأقصر",
+        lat: 25.6872,
+        lng: 32.6396,
+        image: "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&q=85&w=900",
+        desc: "منطقة أثرية استثنائية تضم معابد ضخمة ووادي الملوك والملكات."
+    },
+
+    {
+        id: 3,
+        name: "واحة سيوة",
+        category: "nature",
+        location: "مطروح",
+        lat: 29.2032,
+        lng: 25.5197,
+        image: "https://images.unsplash.com/photo-1544885935-98dd03b09034?auto=format&fit=crop&q=85&w=900",
+        desc: "واحة ساحرة تشتهر ببحيرات الملح والينابيع الطبيعية وقلعة شالي."
+    },
+
+    {
+        id: 4,
+        name: "دهب والبلو هول",
+        category: "beaches",
+        location: "جنوب سيناء",
+        lat: 28.5097,
+        lng: 34.5136,
+        image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5?auto=format&fit=crop&q=85&w=900",
+        desc: "وجهة شهيرة للغوص والرياضات البحرية والاسترخاء على البحر الأحمر."
+    },
+
+    {
+        id: 5,
+        name: "أسوان وفيلة",
+        category: "nature",
+        location: "أسوان",
+        lat: 24.0889,
+        lng: 32.8998,
+        image: "https://images.unsplash.com/photo-1539650116574-8efeb43e2750?auto=format&fit=crop&q=85&w=900",
+        desc: "مدينة النيل والجزر والمعابد والمناظر الطبيعية المميزة في جنوب مصر."
+    },
+
+    {
+        id: 6,
+        name: "شارع المعز وخان الخليلي",
+        category: "monuments",
+        location: "القاهرة",
+        lat: 30.0478,
+        lng: 31.2622,
+        image: "https://images.unsplash.com/photo-1572252821143-035a22284ec1?auto=format&fit=crop&q=85&w=900",
+        desc: "قلب القاهرة التاريخية ومزيج مميز من العمارة الإسلامية والأسواق الشعبية."
+    }
+];
+
+const bazaarProducts = [
+
+    {
+        id: 101,
+        name: "بردية مصرية مذهبة",
+        price: 45,
+        rating: 4.9,
+        image: "https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&fit=crop&q=85&w=600"
+    },
+
+    {
+        id: 102,
+        name: "قلادة خرطوش فضية",
+        price: 60,
+        rating: 5.0,
+        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&q=85&w=600"
+    },
+
+    {
+        id: 103,
+        name: "تمثال باستت",
+        price: 35,
+        rating: 4.8,
+        image: "https://images.unsplash.com/photo-1568322445389-f64ac2515020?auto=format&fit=crop&q=85&w=600"
+    },
+
+    {
+        id: 104,
+        name: "سجاد نوبي يدوي",
+        price: 110,
+        rating: 4.9,
+        image: "https://images.unsplash.com/photo-1600121848594-d8644e57abab?auto=format&fit=crop&q=85&w=600"
+    }
+];
+
+/* =========================================================
+   CART
+========================================================= */
+
+let cart = JSON.parse(localStorage.getItem("egyptEternalCart") || "[]");
+
+function saveCart() {
+    localStorage.setItem(
+        "egyptEternalCart",
+        JSON.stringify(cart)
+    );
+}
+
+function addToCart(productId) {
+
+    const product = bazaarProducts.find(
+        p => p.id === productId
+    );
+
+    if (!product) return;
+
+    const existing = cart.find(
+        item => item.id === productId
+    );
+
+    if (existing) {
+        existing.quantity++;
+    } else {
+        cart.push({
+            ...product,
+            quantity: 1
+        });
+    }
+
+    saveCart();
+    updateCartUI();
+
+    showToast("تمت إضافة المنتج إلى الحقيبة");
+}
+
+function removeFromCart(productId) {
+
+    cart = cart.filter(
+        item => item.id !== productId
+    );
+
+    saveCart();
+    updateCartUI();
+}
+
+function changeQuantity(productId, change) {
+
+    const item = cart.find(
+        p => p.id === productId
+    );
+
+    if (!item) return;
+
+    item.quantity += change;
+
+    if (item.quantity <= 0) {
+        cart = cart.filter(
+            p => p.id !== productId
+        );
+    }
+
+    saveCart();
+    updateCartUI();
+}
+
+function updateCartUI() {
+
+    const count = cart.reduce(
+        (sum, item) => sum + item.quantity,
+        0
+    );
+
+    const total = cart.reduce(
+        (sum, item) => sum + item.price * item.quantity,
+        0
+    );
+
+    document.getElementById("cartCount").textContent = count;
+
+    document.getElementById("cartTotal").textContent =
+        "$" + total.toFixed(2);
+
+    const list = document.getElementById("cartItemsList");
+
+    if (!cart.length) {
+
+        list.innerHTML = `
+            <div class="text-center py-16 text-stone-500">
+                <i class="fa-solid fa-bag-shopping text-4xl mb-4"></i>
+                <p>حقيبتك فارغة حالياً</p>
+            </div>
+        `;
+
+        return;
+    }
+
+    list.innerHTML = cart.map(item => `
+
+        <div class="bg-stone-950 border border-stone-800
+                    rounded-xl p-3 flex gap-3">
+
+            <img
+                src="${item.image}"
+                alt="${escapeHtml(item.name)}"
+                class="w-16 h-16 rounded-lg object-cover">
+
+            <div class="flex-1">
+
+                <div class="text-sm font-bold text-stone-200">
+                    ${escapeHtml(item.name)}
+                </div>
+
+                <div class="text-gold-400 text-sm font-bold mt-1">
+                    $${item.price}
+                </div>
+
+                <div class="flex items-center gap-2 mt-2">
+
+                    <button
+                        onclick="changeQuantity(${item.id}, -1)"
+                        class="w-6 h-6 rounded bg-stone-800">
+                        -
+                    </button>
+
+                    <span class="text-xs">
+                        ${item.quantity}
+                    </span>
+
+                    <button
+                        onclick="changeQuantity(${item.id}, 1)"
+                        class="w-6 h-6 rounded bg-stone-800">
+                        +
+                    </button>
+
+                </div>
+
+            </div>
+
+            <button
+                onclick="removeFromCart(${item.id})"
+                class="text-stone-600 hover:text-red-400">
+                <i class="fa-solid fa-trash"></i>
+            </button>
+
+        </div>
+
+    `).join("");
+}
+
+function toggleCartModal() {
+
+    document
+        .getElementById("cartDrawer")
+        .classList.toggle("open");
+
+    document
+        .getElementById("cartOverlay")
+        .classList.toggle("open");
+}
+
+/*
+    الطلب الحقيقي يحتاج Backend على:
+    POST /api/orders
+
+    الكود هنا يرسل بيانات الطلب للـ Backend
+    بدون وضع أي مفاتيح حساسة في الصفحة.
+*/
+
+async function checkoutCart() {
+
+    if (!cart.length) {
+        showToast("الحقيبة فارغة");
+        return;
+    }
+
+    const total = cart.reduce(
+        (sum, item) =>
+            sum + item.price * item.quantity,
+        0
+    );
+
+    const customerName = prompt("اكتب اسمك لإتمام الطلب:");
+
+    if (!customerName) return;
+
+    const customerEmail = prompt("اكتب بريدك الإلكتروني:");
+
+    if (!customerEmail) return;
+
+    const order = {
+        customer: {
+            name: customerName,
+            email: customerEmail
+        },
+        items: cart.map(item => ({
+            id: item.id,
+            name: item.name,
+            quantity: item.quantity,
+            price: item.price
+        })),
+        total,
+        currency: "USD",
+        createdAt: new Date().toISOString()
+    };
+
+    try {
+
+        const response = await fetch("/api/orders", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(order)
+        });
+
+        if (!response.ok) {
+            throw new Error("ORDER_FAILED");
         }
 
-        async function handleChatSubmit(e) {
-            e.preventDefault();
-            const input = document.getElementById('userInput');
-            const message = input.value.trim();
-            if (!message) return;
+        cart = [];
 
-            // Add User Message
-            addChatMessage('user', message);
-            input.value = '';
+        saveCart();
+        updateCartUI();
+        toggleCartModal();
 
-            // Show Loading Indicator
-            const loadingId = addChatMessage('bot', 'جاري التواصل مع حكيم الفراعنة واستدعاء الحكمة...', true);
+        showToast("تم إرسال الطلب بنجاح");
 
-            try {
-                // Gemini API Call
-                const systemPrompt = "أنت 'حكيم الفراعنة'، مؤرخ ومرشد سياحي مصري عليم ولطيف وشغوف بالحضارة المصرية والجمال السياحي لمصر. أجب باللغة العربية بأسلوب راقٍ وممتع وملهم ومختصر ويقدم اقتراحات عملية ومعلومات دقيقة.";
-                const apiKey = ""; // Canvas handles key automatically in runtime
-                const apiUrl = `https://generativelanguage.googleapis.com/v1beta/models/gemini-3-flash-preview:generateContent?key=${apiKey}`;
+    } catch (error) {
 
-                const response = await fetch(apiUrl, {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({
-                        contents: [{ parts: [{ text: message }] }],
-                        systemInstruction: { parts: [{ text: systemPrompt }] }
-                    })
+        console.error(error);
+
+        showToast(
+            "تعذر إرسال الطلب حالياً، تأكد من تشغيل Backend."
+        );
+    }
+}
+
+/* =========================================================
+   ERAS
+========================================================= */
+
+function switchEra(key) {
+
+    const era = erasData[key];
+
+    if (!era) return;
+
+    document
+        .querySelectorAll(".era-tab")
+        .forEach(btn => {
+            btn.classList.remove("active-tab");
+        });
+
+    const selected = document.getElementById(
+        "tab-" + key
+    );
+
+    if (selected) {
+        selected.classList.add("active-tab");
+    }
+
+    document.getElementById(
+        "eraCardContainer"
+    ).innerHTML = `
+
+        <div class="grid grid-cols-1 lg:grid-cols-12
+                    gap-9 items-center">
+
+            <div class="lg:col-span-7">
+
+                <span class="inline-block
+                             px-3 py-1 rounded-full
+                             border border-gold-500/30
+                             bg-gold-500/10
+                             text-gold-400 text-xs font-bold">
+
+                    ${era.period}
+
+                </span>
+
+                <h3 class="text-3xl sm:text-5xl
+                           font-black text-white mt-5">
+
+                    ${era.title}
+
+                </h3>
+
+                <p class="text-gold-400
+                          font-bold mt-3">
+
+                    ${era.subtitle}
+
+                </p>
+
+                <p class="text-stone-300
+                          leading-8 mt-5">
+
+                    ${era.description}
+
+                </p>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2
+                            gap-3 mt-7">
+
+                    ${era.highlights.map(item => `
+
+                        <div class="flex items-center gap-2
+                                    text-sm text-stone-200">
+
+                            <i class="fa-solid fa-circle-check
+                                      text-gold-400"></i>
+
+                            ${item}
+
+                        </div>
+
+                    `).join("")}
+
+                </div>
+
+            </div>
+
+            <div class="lg:col-span-5">
+
+                <div class="rounded-2xl overflow-hidden
+                            border border-gold-500/20">
+
+                    <img
+                        src="${era.image}"
+                        alt="${era.title}"
+                        loading="lazy"
+                        class="w-full h-80 object-cover
+                               hover:scale-105 transition duration-700">
+
+                </div>
+
+            </div>
+
+        </div>
+    `;
+}
+
+/* =========================================================
+   DESTINATIONS
+========================================================= */
+
+function filterDestinations(category, button) {
+
+    document
+        .querySelectorAll(".dest-filter")
+        .forEach(btn => {
+            btn.classList.remove("active-filter");
+        });
+
+    button.classList.add("active-filter");
+
+    const items =
+        category === "all"
+            ? destinations
+            : destinations.filter(
+                item => item.category === category
+            );
+
+    renderDestinations(items);
+}
+
+function renderDestinations(items) {
+
+    const grid =
+        document.getElementById("destinationsGrid");
+
+    grid.innerHTML = items.map(item => `
+
+        <article
+            class="product-card gold-border
+                   bg-stone-900/80 rounded-2xl
+                   overflow-hidden">
+
+            <div class="relative h-56">
+
+                <img
+                    src="${item.image}"
+                    alt="${escapeHtml(item.name)} - ${item.location}"
+                    loading="lazy"
+                    class="w-full h-full object-cover">
+
+                <span class="absolute top-3 right-3
+                             bg-black/75
+                             border border-gold-500/30
+                             text-gold-300
+                             px-3 py-1 rounded-full
+                             text-xs font-bold">
+
+                    <i class="fa-solid fa-location-dot ml-1"></i>
+                    ${item.location}
+
+                </span>
+
+            </div>
+
+            <div class="p-6">
+
+                <h3 class="text-xl font-black text-white">
+                    ${item.name}
+                </h3>
+
+                <p class="text-stone-400
+                          text-sm leading-7 mt-3">
+
+                    ${item.desc}
+
+                </p>
+
+                <button
+                    onclick="openDestination(${item.id})"
+                    class="w-full mt-5 py-3 rounded-xl
+                           border border-gold-500/40
+                           text-gold-300
+                           hover:bg-gold-500
+                           hover:text-black
+                           font-bold transition">
+
+                    استكشف الوجهة
+                    <i class="fa-solid fa-arrow-left mr-2"></i>
+
+                </button>
+
+            </div>
+
+        </article>
+
+    `).join("");
+}
+
+function openDestination(id) {
+
+    const item = destinations.find(
+        destination => destination.id === id
+    );
+
+    if (!item) return;
+
+    openVrModal(
+        item.name,
+        item.image,
+        item.desc
+    );
+}
+
+/* =========================================================
+   BAZAAR
+========================================================= */
+
+function renderBazaar() {
+
+    const grid =
+        document.getElementById("bazaarGrid");
+
+    grid.innerHTML = bazaarProducts.map(product => `
+
+        <article
+            class="product-card
+                   bg-stone-900/90
+                   border border-stone-800
+                   rounded-2xl p-4">
+
+            <img
+                src="${product.image}"
+                alt="${escapeHtml(product.name)}"
+                loading="lazy"
+                class="w-full h-48 object-cover
+                       rounded-xl">
+
+            <div class="flex justify-between
+                        items-center mt-4">
+
+                <span class="text-amber-400
+                             text-xs font-bold">
+
+                    ★ ${product.rating}
+
+                </span>
+
+                <span class="text-gold-400
+                             font-black text-lg">
+
+                    $${product.price}
+
+                </span>
+
+            </div>
+
+            <h3 class="font-bold mt-2">
+                ${product.name}
+            </h3>
+
+            <button
+                onclick="addToCart(${product.id})"
+                class="w-full mt-4 py-3
+                       rounded-xl
+                       bg-stone-800
+                       text-gold-300
+                       hover:bg-gold-500
+                       hover:text-black
+                       font-bold transition">
+
+                <i class="fa-solid fa-plus ml-1"></i>
+                إضافة للحقيبة
+
+            </button>
+
+        </article>
+
+    `).join("");
+}
+
+/* =========================================================
+   MODAL
+========================================================= */
+
+function openVrModal(title, image, description) {
+
+    const modal =
+        document.getElementById("detailModal");
+
+    document.getElementById(
+        "modalContent"
+    ).innerHTML = `
+
+        <img
+            src="${image}"
+            alt="${escapeHtml(title)}"
+            class="w-full h-80 object-cover">
+
+        <div class="p-7">
+
+            <span class="text-gold-400 text-xs font-bold">
+                مصر الخالدة
+            </span>
+
+            <h3 class="text-3xl font-black mt-2">
+                ${escapeHtml(title)}
+            </h3>
+
+            <p class="text-stone-300 leading-8 mt-4">
+                ${escapeHtml(description)}
+            </p>
+
+            <div class="mt-5 p-4 rounded-xl
+                        bg-stone-950
+                        border border-stone-800
+                        text-sm text-stone-400">
+
+                <i class="fa-solid fa-circle-info
+                          text-gold-400 ml-2"></i>
+
+                يمكنك استخدام حكيم الفراعنة للحصول
+                على معلومات إضافية عن هذه الوجهة.
+
+            </div>
+
+        </div>
+    `;
+
+    modal.classList.add("open");
+}
+
+function closeModal() {
+    document
+        .getElementById("detailModal")
+        .classList.remove("open");
+}
+
+/* =========================================================
+   GEMINI CHAT
+========================================================= */
+
+async function handleChatSubmit(event) {
+
+    event.preventDefault();
+
+    const input =
+        document.getElementById("userInput");
+
+    const sendBtn =
+        document.getElementById("sendBtn");
+
+    const message =
+        input.value.trim();
+
+    if (!message) return;
+
+    addChatMessage("user", message);
+
+    input.value = "";
+    input.disabled = true;
+    sendBtn.disabled = true;
+
+    const loadingId =
+        addChatMessage(
+            "bot",
+            "جاري استدعاء حكمة الفراعنة...",
+            true
+        );
+
+    try {
+
+        /*
+            مهم جداً:
+
+            لا يوجد API Key هنا.
+
+            الموقع يرسل السؤال إلى:
+            /api/chat
+
+            والـ Backend هو الذي يتعامل مع Gemini.
+        */
+
+        const response = await fetch("/api/chat", {
+
+            method: "POST",
+
+            headers: {
+                "Content-Type": "application/json"
+            },
+
+            body: JSON.stringify({
+                message
+            })
+
+        });
+
+        if (!response.ok) {
+            throw new Error(
+                "Gemini backend error"
+            );
+        }
+
+        const data = await response.json();
+
+        const reply =
+            data.reply ||
+            data.text ||
+            "اعتذر يا صديقي، لم أتمكن من استحضار الإجابة الآن.";
+
+        removeChatMessage(loadingId);
+
+        addChatMessage(
+            "bot",
+            reply
+        );
+
+    } catch (error) {
+
+        console.error(error);
+
+        removeChatMessage(loadingId);
+
+        addChatMessage(
+            "bot",
+            "تعذر الاتصال بحكيم الفراعنة حالياً. تأكد من تشغيل Backend الخاص بـ Gemini."
+        );
+
+    } finally {
+
+        input.disabled = false;
+        sendBtn.disabled = false;
+        input.focus();
+
+    }
+}
+
+function sendQuickPrompt(text) {
+
+    const input =
+        document.getElementById("userInput");
+
+    input.value = text;
+
+    document
+        .getElementById("chatForm")
+        .requestSubmit();
+}
+
+function addChatMessage(
+    sender,
+    text,
+    loading = false
+) {
+
+    const container =
+        document.getElementById("chatMessages");
+
+    const id =
+        "message-" +
+        Date.now() +
+        Math.random()
+            .toString(36)
+            .slice(2);
+
+    const isUser =
+        sender === "user";
+
+    const messageHtml = `
+
+        <div id="${id}"
+             class="flex gap-3
+                    ${isUser ? "flex-row-reverse" : ""}">
+
+            <div class="w-8 h-8 rounded-full
+                        flex-shrink-0
+                        flex items-center justify-center
+                        ${isUser
+                            ? "bg-gold-500 text-black"
+                            : "bg-gold-500/15 text-gold-400"}">
+
+                ${isUser
+                    ? '<i class="fa-solid fa-user"></i>'
+                    : "𓂀"}
+
+            </div>
+
+            <div class="${
+                isUser
+                ? "bg-gold-500 text-black"
+                : "bg-stone-800 border border-stone-700 text-stone-200"
+            }
+            p-4 rounded-2xl
+            ${isUser ? "rounded-tl-none" : "rounded-tr-none"}
+            text-sm leading-7
+            max-w-[85%]">
+
+                ${
+                    loading
+                    ? `<i class="fa-solid fa-spinner fa-spin ml-2"></i>${escapeHtml(text)}`
+                    : formatChatText(text)
+                }
+
+            </div>
+
+        </div>
+    `;
+
+    container.insertAdjacentHTML(
+        "beforeend",
+        messageHtml
+    );
+
+    container.scrollTop =
+        container.scrollHeight;
+
+    return id;
+}
+
+function removeChatMessage(id) {
+
+    const element =
+        document.getElementById(id);
+
+    if (element) {
+        element.remove();
+    }
+}
+
+function formatChatText(text) {
+
+    return escapeHtml(text)
+        .replace(/\n/g, "<br>")
+        .replace(/\*\*(.*?)\*\*/g, "<strong>$1</strong>");
+}
+
+/* =========================================================
+   MAP
+========================================================= */
+
+let egyptMap;
+
+function initializeMap() {
+
+    egyptMap = L.map("egyptMap", {
+        scrollWheelZoom: true
+    }).setView(
+        [26.8206, 30.8025],
+        5.5
+    );
+
+    L.tileLayer(
+        "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+        {
+            maxZoom: 18,
+            attribution: "&copy; OpenStreetMap contributors"
+        }
+    ).addTo(egyptMap);
+
+    destinations.forEach(destination => {
+
+        const icon =
+            L.divIcon({
+                className: "",
+                html: `
+                    <div class="egypt-marker">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                `,
+                iconSize: [34, 34],
+                iconAnchor: [17, 34]
+            });
+
+        const marker =
+            L.marker(
+                [destination.lat, destination.lng],
+                { icon }
+            ).addTo(egyptMap);
+
+        marker.bindPopup(`
+
+            <div dir="rtl" style="min-width:190px">
+
+                <strong style="
+                    color:#d4af37;
+                    font-size:16px;
+                ">
+                    ${escapeHtml(destination.name)}
+                </strong>
+
+                <p style="
+                    margin-top:7px;
+                    color:#bbb;
+                    font-size:12px;
+                    line-height:1.8;
+                ">
+                    ${escapeHtml(destination.desc)}
+                </p>
+
+                <button
+                    onclick="openDestination(${destination.id})"
+                    style="
+                        width:100%;
+                        border:1px solid #d4af37;
+                        background:#d4af37;
+                        color:#111;
+                        border-radius:8px;
+                        padding:7px;
+                        font-family:Cairo;
+                        font-weight:bold;
+                        cursor:pointer;
+                    ">
+                    استكشف
+                </button>
+
+            </div>
+        `);
+
+    });
+}
+
+/* =========================================================
+   AUDIO
+========================================================= */
+
+let audioContext = null;
+let audioPlaying = false;
+let audioInterval = null;
+
+function toggleAudio() {
+
+    const icon =
+        document.getElementById("musicIcon");
+
+    if (!audioPlaying) {
+
+        if (!audioContext) {
+
+            audioContext =
+                new (
+                    window.AudioContext ||
+                    window.webkitAudioContext
+                )();
+
+        }
+
+        audioContext.resume();
+
+        audioPlaying = true;
+
+        icon.classList.add(
+            "animate-spin"
+        );
+
+        playEgyptianAmbience();
+
+    } else {
+
+        audioPlaying = false;
+
+        icon.classList.remove(
+            "animate-spin"
+        );
+
+        if (audioInterval) {
+            clearInterval(audioInterval);
+        }
+    }
+}
+
+function playEgyptianAmbience() {
+
+    const frequencies = [
+        220,
+        247.5,
+        275,
+        330,
+        371.25,
+        440
+    ];
+
+    audioInterval =
+        setInterval(() => {
+
+            if (!audioPlaying) return;
+
+            const oscillator =
+                audioContext.createOscillator();
+
+            const gain =
+                audioContext.createGain();
+
+            const frequency =
+                frequencies[
+                    Math.floor(
+                        Math.random() *
+                        frequencies.length
+                    )
+                ];
+
+            oscillator.type = "sine";
+
+            oscillator.frequency.setValueAtTime(
+                frequency,
+                audioContext.currentTime
+            );
+
+            gain.gain.setValueAtTime(
+                0.01,
+                audioContext.currentTime
+            );
+
+            gain.gain.exponentialRampToValueAtTime(
+                0.06,
+                audioContext.currentTime + 1
+            );
+
+            gain.gain.exponentialRampToValueAtTime(
+                0.0001,
+                audioContext.currentTime + 4
+            );
+
+            oscillator.connect(gain);
+
+            gain.connect(
+                audioContext.destination
+            );
+
+            oscillator.start();
+
+            oscillator.stop(
+                audioContext.currentTime + 4
+            );
+
+        }, 2500);
+}
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+function toggleMobileMenu() {
+
+    const menu =
+        document.getElementById(
+            "mobileMenu"
+        );
+
+    const icon =
+        document.getElementById(
+            "mobileMenuIcon"
+        );
+
+    menu.classList.toggle("open");
+
+    if (menu.classList.contains("open")) {
+
+        icon.classList.remove(
+            "fa-bars"
+        );
+
+        icon.classList.add(
+            "fa-xmark"
+        );
+
+    } else {
+
+        icon.classList.remove(
+            "fa-xmark"
+        );
+
+        icon.classList.add(
+            "fa-bars"
+        );
+    }
+}
+
+/* =========================================================
+   TOAST
+========================================================= */
+
+function showToast(message) {
+
+    const old =
+        document.getElementById("siteToast");
+
+    if (old) old.remove();
+
+    const toast =
+        document.createElement("div");
+
+    toast.id = "siteToast";
+
+    toast.className =
+        "fixed bottom-6 left-1/2 -translate-x-1/2 z-[5000] " +
+        "bg-stone-900 border border-gold-500/40 " +
+        "text-gold-300 px-5 py-3 rounded-xl " +
+        "shadow-2xl text-sm font-bold";
+
+    toast.textContent = message;
+
+    document.body.appendChild(toast);
+
+    setTimeout(() => {
+        toast.remove();
+    }, 3000);
+}
+
+/* =========================================================
+   SECURITY / HELPERS
+========================================================= */
+
+function escapeHtml(value) {
+
+    return String(value)
+        .replace(/&/g, "&amp;")
+        .replace(/</g, "&lt;")
+        .replace(/>/g, "&gt;")
+        .replace(/"/g, "&quot;")
+        .replace(/'/g, "&#039;");
+}
+
+/* =========================================================
+   SCROLL ANIMATIONS
+========================================================= */
+
+function initializeAnimations() {
+
+    const observer =
+        new IntersectionObserver(
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "visible"
+                        );
+
+                    }
+
                 });
 
-                const data = await response.json();
-                const reply = data.candidates?.[0]?.content?.parts?.[0]?.text || "اعتذر منك يا صديقي، حدث ارتباك في أوراق البردي الخاصة بي. هل يمكنك إعادة السؤال؟";
-
-                // Replace loading message
-                removeChatMessage(loadingId);
-                addChatMessage('bot', reply);
-            } catch (err) {
-                console.error(err);
-                removeChatMessage(loadingId);
-                addChatMessage('bot', "يبدو أن خطوط الاتصال عبر الزمن مزدحمة حالياً! حاول مجدداً بعد لحظات.");
+            },
+            {
+                threshold: 0.1
             }
-        }
+        );
 
-        function sendQuickPrompt(promptText) {
-            document.getElementById('userInput').value = promptText;
-            document.getElementById('chatForm').requestSubmit();
-        }
+    document
+        .querySelectorAll(".fade-up")
+        .forEach(element => {
+            observer.observe(element);
+        });
+}
 
-        function addChatMessage(sender, text, isLoading = false) {
-            const chatContainer = document.getElementById('chatMessages');
-            const msgId = 'msg-' + Date.now();
-            
-            const isUser = sender === 'user';
-            const msgHTML = `
-                <div id="${msgId}" class="flex gap-3 items-start ${isUser ? 'flex-row-reverse' : ''}">
-                    <div class="w-8 h-8 rounded-full ${isUser ? 'bg-gold-500 text-stone-950 font-bold' : 'bg-gold-500/20 border border-gold-500/40 text-gold-400'} flex items-center justify-center flex-shrink-0 text-xs">
-                        <i class="fa-solid ${isUser ? 'fa-user' : 'fa-ankh'}"></i>
-                    </div>
-                    <div class="${isUser ? 'bg-gold-500 text-stone-950 font-medium' : 'bg-stone-800/80 border border-stone-700 text-stone-200'} p-4 rounded-2xl ${isUser ? 'rounded-tl-none' : 'rounded-tr-none'} text-sm leading-relaxed max-w-[85%]">
-                        ${isLoading ? `<i class="fa-solid fa-spinner animate-spin text-gold-400 ml-2"></i> ${text}` : text}
-                    </div>
-                </div>
-            `;
-            chatContainer.insertAdjacentHTML('beforeend', msgHTML);
-            chatContainer.scrollTop = chatContainer.scrollHeight;
-            return msgId;
-        }
+/* =========================================================
+   INIT
+========================================================= */
 
-        function removeChatMessage(id) {
-            const el = document.getElementById(id);
-            if (el) el.remove();
-        }
+document.addEventListener(
+    "DOMContentLoaded",
+    () => {
 
-        function openVrModal(title, imgUrl, desc) {
-            const modal = document.getElementById('detailModal');
-            const content = document.getElementById('modalContent');
-            content.innerHTML = `
-                <div class="relative">
-                    <img src="${imgUrl}" alt="${title}" class="w-full h-80 object-cover">
-                    <div class="absolute bottom-4 right-4 bg-stone-950/80 border border-gold-500 px-3 py-1 rounded-full text-gold-300 text-xs font-bold flex items-center gap-2">
-                        <span class="w-2 h-2 rounded-full bg-red-500 animate-pulse"></span> جولة افتراضية 360° محاكاة
-                    </div>
-                </div>
-                <div class="p-6 space-y-4">
-                    <h3 class="text-2xl font-bold text-stone-100">${title}</h3>
-                    <p class="text-stone-300 text-sm leading-relaxed">${desc}</p>
-                    <div class="p-4 bg-stone-950 border border-stone-800 rounded-xl text-xs text-stone-400 space-y-1">
-                        <div class="font-bold text-gold-400">💡 معلومات تهم الزائر:</div>
-                        <div>• تتوفر التذاكر الإلكترونية بأسعار مخصصة للطلاب والمواطنين والسياح.</div>
-                        <div>• يُنصح بالزيارة في الصباح البكر للاستمتاع بالطبيعة والتقاط الصور الخالدة.</div>
-                    </div>
-                </div>
-            `;
-            modal.classList.remove('hidden');
-        }
+        switchEra("pharaonic");
 
-        function closeModal() {
-            document.getElementById('detailModal').classList.add('hidden');
-        }
+        renderDestinations(
+            destinations
+        );
 
-        function addToCart(productId) {
-            const product = bazaarProducts.find(p => p.id === productId);
-            if (!product) return;
-            cart.push(product);
-            updateCartUI();
-            toggleCartModal();
-        }
+        renderBazaar();
 
-        function updateCartUI() {
-            document.getElementById('cartCount').innerText = cart.length;
-            const itemsList = document.getElementById('cartItemsList');
-            const totalEl = document.getElementById('cartTotal');
+        updateCartUI();
 
-            if (cart.length === 0) {
-                itemsList.innerHTML = `<p class="text-stone-500 text-sm text-center py-8">حقيبتك فارغة حالياً</p>`;
-                totalEl.innerText = `$0`;
-                return;
+        initializeMap();
+
+        initializeAnimations();
+
+    }
+);
+
+/* =========================================================
+   CLOSE MODAL WITH ESC
+========================================================= */
+
+document.addEventListener(
+    "keydown",
+    event => {
+
+        if (event.key === "Escape") {
+
+            closeModal();
+
+            const cart =
+                document.getElementById(
+                    "cartDrawer"
+                );
+
+            if (
+                cart.classList.contains(
+                    "open"
+                )
+            ) {
+                toggleCartModal();
             }
 
-            let total = 0;
-            itemsList.innerHTML = cart.map((item, index) => {
-                total += item.price;
-                return `
-                    <div class="flex items-center justify-between bg-stone-950 p-3 rounded-xl border border-stone-800">
-                        <div class="flex items-center gap-3">
-                            <img src="${item.image}" class="w-12 h-12 object-cover rounded-lg">
-                            <div>
-                                <div class="text-xs font-bold text-stone-200">${item.name}</div>
-                                <div class="text-gold-400 font-cinzel text-xs font-bold">$${item.price}</div>
-                            </div>
-                        </div>
-                        <button onclick="removeFromCart(${index})" class="text-stone-500 hover:text-red-400 text-xs">
-                            <i class="fa-solid fa-trash"></i>
-                        </button>
-                    </div>
-                `;
-            }).join('');
-            totalEl.innerText = `$${total}`;
         }
 
-        function removeFromCart(index) {
-            cart.splice(index, 1);
-            updateCartUI();
-        }
+    }
+);
 
-        function toggleCartModal() {
-            const cartModal = document.getElementById('cartModal');
-            cartModal.classList.toggle('hidden');
-        }
+</script>
 
-        function checkoutCart() {
-            if (cart.length === 0) return;
-            alert("تم تسجيل طلبك التذكاري بنجاح! يسعدنا نقل جزء من التراث المصري لدائرتك.");
-            cart = [];
-            updateCartUI();
-            toggleCartModal();
-        }
+<style>
+.nav-link {
+    color: #d6d3d1;
+    font-size: 14px;
+    font-weight: 600;
+    transition: .2s;
+}
 
-        function toggleMobileMenu() {
-            const menu = document.getElementById('mobileMenu');
-            menu.classList.toggle('hidden');
-        }
+.nav-link:hover {
+    color: #d4af37;
+}
 
-        // Ambient Web Audio Synthesizer (Relaxing oriental scale)
-        let audioCtx = null;
-        let isPlaying = false;
-        let audioInterval = null;
+.mobile-link {
+    display: block;
+    padding: 11px 4px;
+    color: #d6d3d1;
+    font-weight: 600;
+}
 
-        function toggleAudio() {
-            const icon = document.getElementById('musicIcon');
-            if (!isPlaying) {
-                if (!audioCtx) audioCtx = new (window.AudioContext || window.webkitAudioContext)();
-                audioCtx.resume();
-                isPlaying = true;
-                icon.classList.add('text-gold-400', 'animate-spin');
-                playNileAmbiance();
-            } else {
-                isPlaying = false;
-                if (audioInterval) clearInterval(audioInterval);
-                icon.classList.remove('animate-spin');
-            }
-        }
+.mobile-link:hover {
+    color: #d4af37;
+}
 
-        function playNileAmbiance() {
-            // Generates soft harmonic oriental pentatonic tones
-            const freqs = [220, 247.5, 275, 330, 371.25, 440];
-            audioInterval = setInterval(() => {
-                if (!isPlaying) return;
-                const osc = audioCtx.createOscillator();
-                const gain = audioCtx.createGain();
-                const freq = freqs[Math.floor(Math.random() * freqs.length)];
-                
-                osc.type = 'sine';
-                osc.frequency.setValueAtTime(freq, audioCtx.currentTime);
-                
-                gain.gain.setValueAtTime(0.01, audioCtx.currentTime);
-                gain.gain.exponentialRampToValueAtTime(0.08, audioCtx.currentTime + 1);
-                gain.gain.exponentialRampToValueAtTime(0.0001, audioCtx.currentTime + 4);
+.era-tab {
+    flex-shrink: 0;
+    padding: 12px 20px;
+    border-radius: 12px;
+    border: 1px solid #292524;
+    background: #181614;
+    color: #a8a29e;
+    font-weight: 700;
+    transition: .25s;
+}
 
-                osc.connect(gain);
-                gain.connect(audioCtx.destination);
+.era-tab:hover {
+    border-color: rgba(212,175,55,.5);
+    color: #d4af37;
+}
 
-                osc.start();
-                osc.stop(audioCtx.currentTime + 4.5);
-            }, 2500);
-        }
+.active-tab {
+    background: rgba(212,175,55,.15) !important;
+    border-color: #d4af37 !important;
+    color: #f3d66d !important;
+    box-shadow: 0 0 25px rgba(212,175,55,.08);
+}
 
-        // Initial Page Load Initialization
-        window.onload = function() {
-            switchEra('pharaonic');
-            renderDestinations(destinations);
-            renderBazaar();
-            updateCartUI();
-        };
-    </script>
+.dest-filter {
+    padding: 9px 16px;
+    border-radius: 10px;
+    background: #292524;
+    color: #d6d3d1;
+    font-size: 13px;
+    font-weight: 700;
+    transition: .2s;
+}
+
+.dest-filter:hover {
+    color: #d4af37;
+}
+
+.active-filter {
+    background: #d4af37 !important;
+    color: #090806 !important;
+}
+
+.prompt-btn {
+    padding: 10px 13px;
+    border-radius: 10px;
+    background: #181614;
+    border: 1px solid #292524;
+    color: #d6d3d1;
+    font-size: 12px;
+    transition: .2s;
+}
+
+.prompt-btn:hover {
+    border-color: rgba(212,175,55,.5);
+    color: #d4af37;
+}
+
+.footer-link {
+    display: block;
+    transition: .2s;
+}
+
+.footer-link:hover {
+    color: #d4af37;
+}
+</style>
+
 </body>
 </html>
